@@ -14,11 +14,23 @@ html {
 }
 
 a {
+  color: unset;
   text-decoration: none;
+
+}
+
+a:hover{
+  color: unset;
+  text-decoration: none;
+
 }
 
 span.deco {
   padding-left: 14px;
+}
+
+span.bold{
+  font-weight: 600;
 }
 
 /*-------------
@@ -162,7 +174,7 @@ span.deco {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #f6f9fe;
+  background-color: rgba(160, 204, 4, 0.74);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -254,9 +266,14 @@ div.titulo-seccion {
   margin-bottom: 2.5vh;
 }
 
+h3.seccion-verde {
+  color: #a0cc04;
+}
+
 span.deco.verde {
   border-bottom: 2px solid #a0cc04;
 }
+
 div.texto-quienes-somos p {
   font-style: normal;
   font-weight: normal;
@@ -281,7 +298,11 @@ div.vector-quienes-somos span.desktop img {
 /*---------- 
 # Servicios
 ---------*/
+h3.seccion-azul {
+  color: #193c4d;
+  padding-top: 2vh;
 
+}
 span.deco.azul {
   border-bottom: 2px solid #193c4d;
 }
@@ -321,16 +342,153 @@ p.texto-card-servicios {
   font-size: 17px;
   line-height: 26px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 3vw;
 }
-
 
 /*--------- 
 # Equipo
 ---------*/
 
-div.persona{}
-div.persona div.foto{}
-div.persona div.foto img{}
-div.persona div.info-de-contacto{}
+div.equipo {
+  background: #193c4d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h3.seccion-blanco {
+  color: #ffffff;
+  padding-top: 2vh;
+}
+
+div.persona {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+div.persona div.foto {
+  background-color: #a0cc04;
+  border-radius: 50%;
+  padding: 1vh;
+}
+div.persona div.foto img {
+  width: 25vh;
+  border-radius: 50%;
+}
+div.persona div.info-de-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+div.persona div.info-de-contacto h6 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: center;
+  margin-top: 0.5vh;
+}
+
+div.persona div.info-de-contacto p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  margin-top: 0.5vh;
+  margin-bottom: 0;
+}
+
+div.persona div.info-de-contacto img {
+  width: 3.5vh;
+  margin: 0.75vh 0 2vh 0;
+}
+
+/*---------------- 
+# Porque elegirnos
+----------------*/
+
+div.porque {
+}
+
+div.porque div.porque-dato {
+  display: flex;
+}
+
+div.porque div.porque-dato img {
+  width: 15vw;
+  margin-right: 3vw;
+}
+
+div.porque div.porque-dato p {
+  line-height: 17px;
+  color: #193c4d;
+  text-align: left;
+}
+
+/*---------------- 
+# Nuestros Clientes
+----------------*/
+
+div.clientes div.titulo-seccion h3{
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  color: #193c4d;
+  padding-left: 14px;
+  padding-top: 2vh;
+  font-weight: 600;
+}
+div.clientes div.logos img {
+  width: 33.3vw;
+}
+
+/*---------------- 
+# Contacto
+----------------*/
+
+div.contacto{
+  background-color: #a0cc04;
+}
+
+div.contacto div.contacto-empresa{
+  color: #FCFDFC;
+
+}
+div.contacto div.contacto-empresa a{
+  color: #FCFDFC;
+
+}
+div.contacto div.contacto-empresa a p{
+  color: #FCFDFC;
+}
+
+
+div.contacto div.mapa iframe{
+  width: 70vw;
+  height: 25vh;
+  padding-bottom: 2.5vh;
+}
+
+
+/*---------------- 
+# Footer
+----------------*/
+
+footer{
+  background-color: #193C4D;
+}
+footer div.texto-footer{
+  font-size: 12px;
+line-height: 12px;
+text-align: center;
+color: #FCFDFC;
+}
+footer div.texto-footer p{
+  padding-top: 5%;
+}
+footer div.texto-footer p:last-child{
+  margin: 0;
+  padding-bottom: 2.5%;
+  padding-top: 0;
+}
