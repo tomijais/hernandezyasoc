@@ -21,9 +21,9 @@ span.deco {
   padding-left: 14px;
 }
 
-/*--------------------------------------------------------------
+/*-------------
 # Header
---------------------------------------------------------------*/
+-------------*/
 #header {
   background: #ffffff;
 }
@@ -34,9 +34,9 @@ span.deco {
   width: 18vh;
 }
 
-/*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
+/*----------------
+# Navigation Menu
+  ----------------*/
 /* Nav Menu Essentials */
 .nav-menu,
 .nav-menu * {
@@ -151,9 +151,9 @@ span.deco {
   margin: 0;
 }
 
-/*--------------------------------------------------------------
+/*-----------------
 # Sidebar
---------------------------------------------------------------*/
+-----------------*/
 
 .sidebar {
   height: 100%;
@@ -217,7 +217,7 @@ span.deco {
 }
 
 /*-------
-   Home
+# Home
   ------*/
 
 div.main-image img {
@@ -248,7 +248,7 @@ div.home div.texto-inicial p {
 }
 
 /*---------- 
-Quienes Somos
+# Quienes Somos
 ---------*/
 div.titulo-seccion {
   margin-bottom: 2.5vh;
@@ -279,7 +279,7 @@ div.vector-quienes-somos span.desktop img {
 }
 
 /*---------- 
-Servicios
+# Servicios
 ---------*/
 
 span.deco.azul {
@@ -315,3 +315,22 @@ h4.titulo-card-servicios {
   text-align: center;
   color: #ffffff;
 }
+
+p.texto-card-servicios {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 3vw;
+}
+
+
+/*--------- 
+# Equipo
+---------*/
+
+div.persona{}
+div.persona div.foto{}
+div.persona div.foto img{}
+div.persona div.info-de-contacto{}
