@@ -27,6 +27,24 @@
     <header id="header" class="header">
       <div class="container">
         <div class="navbar">
+          <!-- Logo -->
+          <div id="logo">
+            <a href="#">
+              <img
+                src="assets/images/Logo Hernández Vectorizado.svg"
+                alt="Logo Hernández Vectorizado"
+              />
+            </a>
+          </div>
+          <!-- Botones en nav -->
+          <nav id="nav-menu-container">
+            <button class="openbtn">☰</button>
+          </nav>
+        </div>
+
+        <div class="navbar-tablet-desktop">
+          <!-- Logo -->
+
           <div id="logo">
             <a href="#">
               <img
@@ -36,27 +54,31 @@
             </a>
           </div>
 
-          <nav id="nav-menu-container">
+          <!-- Botones en nav -->
+
+          <nav id="nav-menu-container mobile">
             <ul class="nav-menu">
-              <li>A</li>
-              <li>B</li>
-              <li>C</li>
-              <li>D</li>
+
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#quienes-somos">Quienes Somos</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <button class="openbtn">☰</button>
           </nav>
         </div>
 
         <!-- SideBar -->
         <div id="mySidebar" class="sidebar">
           <a href="javascript:void(0)" class="closebtn">×</a>
-          <a href="#">Inicio</a> <a href="#get-started">Nosotros</a>
-          <a href="#contact">Contacto</a>
+          <a href="#">Inicio</a> <a href="#quienes-somos">Quienes Somos</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#contacto">Contacto</a>
         </div>
         <div id="main"></div>
       </div>
     </header>
     <!-- Fin del Header -->
+
     <!-- Home -->
     <div class="main-image">
       <img src="assets/images/Inicio.jpg" alt="Imagen de Inicio" />
@@ -84,41 +106,46 @@
 
     <!-- Quienes Somos -->
 
-    <div class="titulo-seccion">
-      <h3 class="seccion-verde">
-        <span class="deco verde">Quienes</span> Somos
-      </h3>
-    </div>
-
-    <div class="container">
-      <div class="texto-quienes-somos">
-        <p>
-          Somos una empresa familiar con más de 30 años en el mercado ofreciendo
-          servicios profesionales integrales a industrias, empresas y clientes
-          particulares.
-        </p>
-        <p>
-          Nos caracterizamos por la eficacia, ética y transparencia en nuestro
-          trabajo. Contamos con profesionales reconocidos internacionalmente con
-          alta responsabilidad empresarial y capacitación continua.
-        </p>
-        <p>
-          Nuestro principal objetivo es la satisfacción de nuestros clientes
-          facilitándoles herramientas para aumentar su competitividad en el
-          mercado actual.
-        </p>
+    <div class="quienes-somos" id="quienes-somos">
+      <div class="titulo-seccion">
+        <h3 class="seccion-verde">
+          <span class="deco verde">Quienes</span> Somos
+        </h3>
       </div>
-      <div class="vector-quienes-somos">
-        <img src="assets/images/Vision, mision, valores (Mobile).svg" alt="" />
-        <span class="desktop">
-          <img src="assets/images/Vision, mision, valores.svg" alt="" />
-        </span>
+
+      <div class="container">
+        <div class="texto-quienes-somos">
+          <p>
+            Somos una empresa familiar con más de 30 años en el mercado
+            ofreciendo servicios profesionales integrales a industrias, empresas
+            y clientes particulares.
+          </p>
+          <p>
+            Nos caracterizamos por la eficacia, ética y transparencia en nuestro
+            trabajo. Contamos con profesionales reconocidos internacionalmente
+            con alta responsabilidad empresarial y capacitación continua.
+          </p>
+          <p>
+            Nuestro principal objetivo es la satisfacción de nuestros clientes
+            facilitándoles herramientas para aumentar su competitividad en el
+            mercado actual.
+          </p>
+        </div>
+        <div class="vector-quienes-somos">
+          <img
+            src="assets/images/Vision, mision, valores (Mobile).svg"
+            alt=""
+          />
+          <span class="desktop">
+            <img src="assets/images/Vision, mision, valores.svg" alt="" />
+          </span>
+        </div>
       </div>
     </div>
     <!-- Fin de Quienes Somos -->
 
     <!-- Servicios -->
-    <div class="servicios">
+    <div class="servicios" id="servicios">
       <div class="titulo-seccion">
         <h3 class="seccion-azul"><span class="deco azul">Servicios</span></h3>
       </div>
@@ -137,9 +164,8 @@
               <p class="texto-card-servicios">
                 Ofrecemos soluciones ingenieriles para las necesidades de cada
                 empresa teniendo en cuenta su adecuación a las limitaciones de
-                recursos humanos y económicos, requisitos legales, requisitos de
-                seguridad y ecológicos.recursos humanos y económicos, requisitos
-                legales, requisitos de seguridad y ecológicos.
+                recursos humanos y económicos, requisitos legales, de seguridad
+                y ecológicos.
               </p>
             </div>
           </div>
@@ -230,7 +256,7 @@
             </div>
             <div class="info-de-contacto">
               <h6 class="nombre-contaco">Luis Hernández</h6>
-              <p class="telefono-contacto">+54 9 11 2222-2222</p>
+
               <a href=""
                 ><img src="assets/images/icons/linkedin.svg" alt=""
               /></a>
@@ -243,7 +269,7 @@
             </div>
             <div class="info-de-contacto">
               <h6 class="nombre-contaco">Hernán Farias</h6>
-              <p class="telefono-contacto">+54 9 11 2222-2222</p>
+
               <a href=""
                 ><img src="assets/images/icons/linkedin.svg" alt=""
               /></a>
@@ -256,7 +282,7 @@
             </div>
             <div class="info-de-contacto">
               <h6 class="nombre-contaco">Alejandro Navarro</h6>
-              <p class="telefono-contacto">+54 9 11 2222-2222</p>
+
               <a href=""
                 ><img src="assets/images/icons/linkedin.svg" alt=""
               /></a>
@@ -269,7 +295,7 @@
             </div>
             <div class="info-de-contacto">
               <h6 class="nombre-contaco">Laura Hernández</h6>
-              <p class="telefono-contacto">+54 9 11 2222-2222</p>
+
               <a href=""
                 ><img src="assets/images/icons/linkedin.svg" alt=""
               /></a>
@@ -390,7 +416,7 @@
     <!-- Fin de Nuestros Clientes -->
 
     <!-- Contacto -->
-    <div class="contacto">
+    <div class="contacto" id="contacto">
       <div class="titulo-seccion">
         <h3 class="seccion-blanco">
           <span class="deco azul">Contacto </span>
@@ -400,25 +426,33 @@
       <div class="container">
         <div class="contacto-empresa">
           <a href="">
-            <p><span class="bold">Dirección:</span> General Pacheco, Buenos Aires, Argentina</p>
+            <p>
+              <span class="bold">Dirección:</span> General Pacheco, Buenos
+              Aires, Argentina
+            </p>
           </a>
           <a href="tel:+">
             <p><span class="bold">Teléfono: </span>(+54911) 40348867</p>
           </a>
           <a href="mailto:">
-            <p><span class="bold">Email:</span> info@estudiohernandezyasoc.com.ar</p>
+            <p>
+              <span class="bold">Email:</span> info@estudiohernandezyasoc.com.ar
+            </p>
           </a>
         </div>
         <div class="mapa">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74451.06860708588!2d-58.69874094519597!3d-34.4444437413476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca39ca574d823%3A0xd4fb0a11188d493e!2sGral.%20Pacheco%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1606324019575!5m2!1ses-419!2sar"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74451.06860708588!2d-58.69874094519597!3d-34.4444437413476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca39ca574d823%3A0xd4fb0a11188d493e!2sGral.%20Pacheco%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1606324019575!5m2!1ses-419!2sar"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
         </div>
       </div>
     </div>
     <!-- Fin de Contacto -->
-
-
-
-
 
     <!-- Footer -->
 
@@ -426,18 +460,15 @@
       <div class="container">
         <div class="texto-footer">
           <p>&copy Copyrights Hernandez y Asociados. All rights reserved.</p>
-          <p>Hecho con ❤️ por
-            <a href="https://github.com/tomijais">Tomás Jais</a> y Laila Winer</p>
+          <p>
+            Hecho con ❤️ por
+            <a href="https://github.com/tomijais">Tomás Jais</a> y Laila Winer
+          </p>
         </div>
       </div>
-
     </footer>
 
-
-
-  <!-- Fin de Footer -->
-
-
+    <!-- Fin de Footer -->
 
     <!-- JS Bootstrap -->
     <script
