@@ -2,6 +2,18 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap");
 
+/*------  
+# Root
+-----*/
+
+:root {
+  --verde-clarito: #a0cc04;
+  --azul: #193c4d;
+  --azul-clarito: #5591c8;
+  --gris: #c4c4c4;
+  --naranja: #d2a25f;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,6 +41,14 @@ span.deco {
 
 span.bold {
   font-weight: 600;
+}
+
+span.deco.azul {
+  border-bottom: 2px solid var(--azul);
+}
+
+span.deco.verde {
+  border-bottom: 2px solid var(--verde-clarito);
 }
 
 /*-------------
@@ -176,14 +196,14 @@ div.navbar-tablet-desktop {
 
   header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile {
     position: absolute;
-    top: calc(2vh + 10vh/2 - 1.5vh*2);
+    top: calc(2vh + 10vh / 2 - 1.5vh * 2);
     right: 4vh;
   }
 
   div.navbar-tablet-desktop nav#nav-menu-container ul.nav-menu {
     display: flex;
   }
-  div.navbar-tablet-desktop nav#nav-menu-container ul.nav-menu li a{
+  div.navbar-tablet-desktop nav#nav-menu-container ul.nav-menu li a {
   }
 
   div.navbar-tablet-desktop div#logo {
@@ -226,7 +246,7 @@ div.navbar-tablet-desktop {
   color: #fdfdfc;
   display: block;
   transition: 0.3s;
-  text-shadow: 0px 3px 3px #193c4d;
+  text-shadow: 0px 3px 3px var(--azul);
   line-height: 20px;
   text-align: right;
 }
@@ -246,14 +266,14 @@ div.navbar-tablet-desktop {
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  color: #a0cc04;
-  border: 1px solid #a0cc04;
+  color: var(--verde-clarito);
+  border: 1px solid var(--verde-clarito);
   background-color: #ffffff;
   padding: 0px 9px;
 }
 
 .openbtn:hover {
-  color: #a0cc04;
+  color: var(--verde-clarito);
 }
 
 #main {
@@ -271,7 +291,7 @@ div.navbar-tablet-desktop {
 
 /*-------
 # Home
-  ------*/
+------*/
 
 div.main-image img {
   width: 100%;
@@ -317,11 +337,7 @@ div.titulo-seccion {
 }
 
 h3.seccion-verde {
-  color: #a0cc04;
-}
-
-span.deco.verde {
-  border-bottom: 2px solid #a0cc04;
+  color: var(--verde-clarito);
 }
 
 div.texto-quienes-somos p {
@@ -330,7 +346,7 @@ div.texto-quienes-somos p {
   font-size: 15px;
   line-height: 17px;
   text-align: right;
-  color: #193c4d;
+  color: var(--azul);
 }
 div.vector-quienes-somos {
 }
@@ -345,45 +361,93 @@ div.vector-quienes-somos span.desktop img {
   display: none;
 }
 
+/*--------------------------------------------------------------
+# Flip card Generals
+--------------------------------------------------------------*/
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 187px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin-bottom: 30px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  -webkit-box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: white;
+  transform: rotateY(0deg);
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+
 /*---------- 
 # Servicios
 ---------*/
+
 div.servicios h3.seccion-azul {
-  color: #193c4d;
+  color: var(--azul);
   padding-top: 2vh;
-}
-span.deco.azul {
-  border-bottom: 2px solid #193c4d;
 }
 
 div.servicios div.imagen-servicio img {
   width: 100%;
+  object-fit: cover;
+  height: 187px;
 }
 
-div.servicios div.texto-servicio1 {
-  background-color: #193c4d;
+div.servicios div.titulo-servicios {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(92, 92, 92, 0.623);
 }
 
-div.servicios div.texto-servicio2 {
-  background-color: #8fb409;
-}
-
-div.servicios div.texto-servicio3 {
-  background-color: #9d9d9d;
-}
-
-div.servicios div.texto-servicio4 {
-  background-color: #d2a25f;
-}
-
-div.servicios div.texto-servicio5 {
-  background-color: #5591c8;
-}
 div.servicios h4.titulo-card-servicios {
-  font-size: 25px;
+  font-size: 23px;
   line-height: 38px;
   text-align: center;
-  color: #ffffff;
+  color: white;
+  
 }
 
 div.servicios p.texto-card-servicios {
@@ -395,12 +459,46 @@ div.servicios p.texto-card-servicios {
   padding: 3vw 4vh;
 }
 
+div.servicios div.servicio1 div.flip-card-back {
+  background-color: var(--azul);
+}
+div.servicios div.texto-servicio1 {
+
+}
+
+div.servicios div.servicio2 div.flip-card-back {
+  background-color: var(--verde-clarito);
+}
+div.servicios div.texto-servicio2 {
+
+}
+
+div.servicios div.servicio3 div.flip-card-back {
+  background-color: var(--gris);
+}
+div.servicios div.texto-servicio3 {
+
+}
+
+div.servicios div.servicio4 div.flip-card-back {
+  background-color: var(--naranja);
+}
+div.servicios div.texto-servicio4 {
+
+}
+
+div.servicios div.servicio5 div.flip-card-back {
+  background-color: var(--azul-clarito);
+}
+div.servicios div.texto-servicio5 {
+}
+
 /*--------- 
 # Equipo
 ---------*/
 
 div.equipo {
-  background: #193c4d;
+  background: var(--azul);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -416,7 +514,7 @@ div.persona {
   flex-direction: column;
 }
 div.persona div.foto {
-  background-color: #a0cc04;
+  background-color: var(--verde-clarito);
   border-radius: 50%;
   padding: 0.75vh;
 }
@@ -464,7 +562,7 @@ div.porque div.porque-dato img {
 
 div.porque div.porque-dato p {
   line-height: 17px;
-  color: #193c4d;
+  color: var(--azul);
   text-align: left;
   font-size: 15px;
 }
@@ -477,7 +575,7 @@ div.clientes div.titulo-seccion h3 {
   font-size: 30px;
   line-height: 38px;
   text-align: center;
-  color: #193c4d;
+  color: var(--azul);
   padding-left: 14px;
   padding-top: 2vh;
   font-weight: 600;
@@ -491,7 +589,7 @@ div.clientes div.logos img {
 ----------------*/
 
 div.contacto {
-  background-color: #a0cc04;
+  background-color: var(--verde-clarito);
 }
 
 div.contacto div.contacto-empresa {
@@ -516,7 +614,7 @@ div.contacto div.mapa iframe {
 ----------------*/
 
 footer {
-  background-color: #193c4d;
+  background-color: var(--azul);
 }
 footer div.texto-footer {
   font-size: 12px;
