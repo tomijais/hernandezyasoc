@@ -10,7 +10,7 @@
   --verde-clarito: #a0cc04;
   --azul: #193c4d;
   --azul-clarito: #5591c8;
-  --gris: #c4c4c4;
+  --gris: #888887;
   --naranja: #d2a25f;
 }
 
@@ -232,7 +232,8 @@ div.navbar-tablet-desktop {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(160, 204, 4, 0.74);
+  background-color: #a0cc04bf;
+
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -417,6 +418,22 @@ div.vector-quienes-somos span.desktop img {
 /*---------- 
 # Servicios
 ---------*/
+div.servicios div.servicio1 div.flip-card-back {
+  background-color: var(--azul);
+}
+div.servicios div.servicio2 div.flip-card-back {
+  background-color: var(--verde-clarito);
+}
+div.servicios div.servicio3 div.flip-card-back {
+  background-color: var(--gris);
+}
+div.servicios div.servicio4 div.flip-card-back {
+  background-color: var(--naranja);
+}
+
+div.servicios div.servicio5 div.flip-card-back {
+  background-color: var(--azul-clarito);
+}
 
 div.servicios h3.seccion-azul {
   color: var(--azul);
@@ -447,50 +464,48 @@ div.servicios h4.titulo-card-servicios {
   line-height: 38px;
   text-align: center;
   color: white;
-  
 }
 
 div.servicios p.texto-card-servicios {
   font-weight: 300;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 23px;
   text-align: center;
   color: #ffffff;
-  padding: 3vw 4vh;
+  padding: 0 5vw;
+  margin: 0;
 }
 
-div.servicios div.servicio1 div.flip-card-back {
-  background-color: var(--azul);
-}
-div.servicios div.texto-servicio1 {
 
-}
-
-div.servicios div.servicio2 div.flip-card-back {
-  background-color: var(--verde-clarito);
-}
-div.servicios div.texto-servicio2 {
-
+div.flip-card-back{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-div.servicios div.servicio3 div.flip-card-back {
-  background-color: var(--gris);
-}
-div.servicios div.texto-servicio3 {
-
-}
-
-div.servicios div.servicio4 div.flip-card-back {
-  background-color: var(--naranja);
-}
-div.servicios div.texto-servicio4 {
-
+div.texto-servicio1,
+div.texto-servicio2,
+div.texto-servicio3,
+div.texto-servicio4,
+div.texto-servicio5 {
+  display: flex;
 }
 
-div.servicios div.servicio5 div.flip-card-back {
-  background-color: var(--azul-clarito);
+div.servicios div.texto-servicio1 p.texto-card-servicios {
 }
-div.servicios div.texto-servicio5 {
+
+div.servicios div.texto-servicio2 p.texto-card-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.servicios div.texto-servicio3 p.texto-card-servicios {
+}
+
+div.servicios div.texto-servicio4 p.texto-card-servicios {
+}
+div.servicios div.texto-servicio5 p.texto-card-servicios {
 }
 
 /*--------- 
