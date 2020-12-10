@@ -12,7 +12,7 @@
   --azul-clarito: #5591c8;
   --gris: #888887;
   --naranja: #d2a25f;
-  --gris-clarito: #c4c4c433
+  --gris-clarito: #c4c4c433;
 }
 
 * {
@@ -150,9 +150,7 @@ span.deco.verde {
   color: #021f42;
 }
 
-.nav-menu > li {
-  margin-left: 10px;
-}
+
 
 .nav-menu ul {
   margin: 0;
@@ -186,6 +184,12 @@ div.navbar-tablet-desktop {
   display: none;
 }
 
+
+
+
+
+
+
 @media screen and (min-width: 550px) {
   div.navbar {
     display: none;
@@ -197,9 +201,21 @@ div.navbar-tablet-desktop {
 
   header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile {
     position: absolute;
-    top: calc(2vh + 10vh / 2 - 1.5vh * 2);
+    top: calc(5vh + 16vh / 2 - 2vh * 2);
+    /* Top del logo + width logo logo/2 - padding logo *2 */
     right: 4vh;
+
   }
+
+  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile ul li a{
+  font-size: 20px;
+  line-height: 31px;
+  text-shadow: 0px 1.5px 1.5px black;
+
+  color: #ffffff;
+  }
+
+
 
   div.navbar-tablet-desktop nav#nav-menu-container ul.nav-menu {
     display: flex;
@@ -211,14 +227,44 @@ div.navbar-tablet-desktop {
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    top: 2vh;
+    top: 5vh;
     left: 4vh;
   }
   div.navbar-tablet-desktop div#logo a {
   }
 
   #header div.navbar-tablet-desktop div#logo a img {
-    padding: 1.5vh;
+    padding: 2vh;
+    width: 16vh;
+  }
+}
+
+
+@media screen and (min-width: 550px) and (max-width:600px) {
+  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile ul li a {
+    font-size: 13px;
+    padding: 4px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width:640px) {
+  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile ul li a {
+    font-size: 14px;
+    padding: 4px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width:730px) {
+  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile ul li a {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 730px) and (max-width:768px) {
+  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile ul li a {
+    font-size: 18px;
+    padding: 5px;
   }
 }
 
@@ -265,7 +311,7 @@ div.navbar-tablet-desktop {
   margin-left: 50px;
 }
 
-.openbtn {
+button.openbtn {
   font-size: 20px;
   cursor: pointer;
   color: var(--verde-clarito);
@@ -305,12 +351,18 @@ div.home {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 2.5vh;
+}
+
+div.home .vector-inicio {
+  display: flex;
+  justify-content: center;
+  margin: 2.5vh 0;
 }
 
 div.home .vector-inicio img {
   margin: 0;
   width: 50vw;
-  margin: 2.5vh calc(25vw - 16px) 2.5vh calc(25vw - 16px);
 }
 div.home div.texto-inicial p {
   font-style: normal;
@@ -319,14 +371,34 @@ div.home div.texto-inicial p {
   line-height: 17px;
   text-align: center;
   color: rgba(100, 100, 100, 1);
-}
-
-div.home div.texto-inicial p:first-child {
   margin-bottom: 0.5vh;
 }
 
-div.home div.texto-inicial p:last-child {
-  margin-bottom: 2.5vh;
+/*---------- 
+# Media queries Home
+---------*/
+
+
+
+
+
+
+@media screen and (min-width: 550px) {
+  div.home {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2.5vh;
+  }
+
+  div.home .vector-inicio img {
+    margin: 0;
+    width: 25vw;
+  }
+
+  div.home div.texto-inicial p {
+    margin: 0;
+  }
 }
 
 /*---------- 
@@ -354,17 +426,36 @@ div.texto-quienes-somos p {
   text-align: right;
   color: var(--azul);
 }
+
+div.texto-quienes-somos p:first-child {
+  margin-top: 38px;
+}
 div.vector-quienes-somos {
+  display: flex;
+  justify-content: center;
+  margin: 2.5vh 0;
 }
 div.vector-quienes-somos img {
   width: 63vw;
-  margin: 2.5vh calc(18vw - 16px) 2.5vh calc(18vw - 16px);
 }
 
-div.vector-quienes-somos span.desktop {
-}
+div.vector-quienes-somos span.tablet img,
 div.vector-quienes-somos span.desktop img {
   display: none;
+}
+
+/*---------- 
+# Media queries Quienes Somos
+---------*/
+
+@media screen and (min-width: 550px) {
+  div.vector-quienes-somos img {
+    display: none;
+  }
+  div.vector-quienes-somos span.tablet img {
+    display: block;
+    width: 50vw;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -486,9 +577,7 @@ div.servicios p.texto-card-servicios {
   margin: 0;
 }
 
-
-div.flip-card-back{
-
+div.flip-card-back {
 }
 
 div.texto-servicio1,
@@ -502,7 +591,6 @@ div.servicios div.texto-servicio1 p.texto-card-servicios {
 }
 
 div.servicios div.texto-servicio2 p.texto-card-servicios {
-
 }
 
 div.servicios div.texto-servicio3 p.texto-card-servicios {
@@ -579,7 +667,6 @@ div.porque div.porque-dato {
   margin-bottom: 3vw;
 }
 
-
 div.porque div.porque-dato:first-child {
   padding-top: 2.5vh;
 }
@@ -605,7 +692,7 @@ div.porque div.porque-dato p {
 # Nuestros Clientes
 ----------------*/
 div.clientes {
-	padding-bottom: 2.5vh;
+  padding-bottom: 2.5vh;
 }
 
 div.clientes div.titulo-seccion h3 {
@@ -618,20 +705,13 @@ div.clientes div.titulo-seccion h3 {
   font-weight: 600;
 }
 
-div.clientes div.logos div.logo{
-    margin: 2vh 0;
+div.clientes div.logos div.logo {
+  margin: 2vh 0;
 }
-
 
 div.clientes div.logos div.logo img {
   width: 22.3vw;
 }
-
-
-
-
-
-
 
 /*---------------- 
 # Contacto
