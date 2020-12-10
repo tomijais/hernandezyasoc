@@ -12,6 +12,7 @@
   --azul-clarito: #5591c8;
   --gris: #888887;
   --naranja: #d2a25f;
+  --gris-clarito: #c4c4c433
 }
 
 * {
@@ -304,13 +305,12 @@ div.home {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 11px;
 }
 
 div.home .vector-inicio img {
   margin: 0;
   width: 50vw;
-  margin: 0.5vh calc(25vw - 16px) 0.5vh calc(25vw - 16px);
+  margin: 2.5vh calc(25vw - 16px) 2.5vh calc(25vw - 16px);
 }
 div.home div.texto-inicial p {
   font-style: normal;
@@ -325,16 +325,21 @@ div.home div.texto-inicial p:first-child {
   margin-bottom: 0.5vh;
 }
 
+div.home div.texto-inicial p:last-child {
+  margin-bottom: 2.5vh;
+}
+
 /*---------- 
 # Quienes Somos
 ---------*/
 div.quienes-somos {
-  background-color: rgba(196, 196, 196, 0.2);
+  background-color: var(--gris-clarito);
 }
 div.titulo-seccion {
   margin-bottom: 2.5vh;
-  font-size: 25;
-  line-height: 38;
+  font-size: 25px;
+  line-height: 38px;
+  padding-top: 1.5vh;
 }
 
 h3.seccion-verde {
@@ -413,6 +418,10 @@ div.vector-quienes-somos span.desktop img {
 .flip-card-back {
   color: white;
   transform: rotateY(180deg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*---------- 
@@ -464,6 +473,7 @@ div.servicios h4.titulo-card-servicios {
   line-height: 38px;
   text-align: center;
   color: white;
+  padding: 0 2vw;
 }
 
 div.servicios p.texto-card-servicios {
@@ -478,9 +488,7 @@ div.servicios p.texto-card-servicios {
 
 
 div.flip-card-back{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
 div.texto-servicio1,
@@ -488,16 +496,13 @@ div.texto-servicio2,
 div.texto-servicio3,
 div.texto-servicio4,
 div.texto-servicio5 {
-  display: flex;
 }
 
 div.servicios div.texto-servicio1 p.texto-card-servicios {
 }
 
 div.servicios div.texto-servicio2 p.texto-card-servicios {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
 div.servicios div.texto-servicio3 p.texto-card-servicios {
@@ -534,7 +539,7 @@ div.persona div.foto {
   padding: 0.75vh;
 }
 div.persona div.foto img {
-  width: 10vh;
+  width: 13vh;
   border-radius: 50%;
 }
 div.persona div.info-de-contacto {
@@ -563,15 +568,28 @@ div.persona div.info-de-contacto img {
 ----------------*/
 
 div.porque {
-  background-color: rgba(196, 196, 196, 0.2);
+  background-color: var(--gris-clarito);
 }
 
 div.porque div.porque-dato {
   display: flex;
+  padding-bottom: 1vh;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3vw;
+}
+
+
+div.porque div.porque-dato:first-child {
+  padding-top: 2.5vh;
+}
+
+div.porque div.porque-dato:last-child {
+  padding-bottom: 2.5vh;
 }
 
 div.porque div.porque-dato img {
-  width: 15vw;
+  width: 8vh;
   margin-right: 3vw;
 }
 
@@ -580,11 +598,15 @@ div.porque div.porque-dato p {
   color: var(--azul);
   text-align: left;
   font-size: 15px;
+  margin: 0;
 }
 
 /*---------------- 
 # Nuestros Clientes
 ----------------*/
+div.clientes {
+	padding-bottom: 2.5vh;
+}
 
 div.clientes div.titulo-seccion h3 {
   font-size: 30px;
@@ -595,9 +617,21 @@ div.clientes div.titulo-seccion h3 {
   padding-top: 2vh;
   font-weight: 600;
 }
-div.clientes div.logos img {
-  width: 33.3vw;
+
+div.clientes div.logos div.logo{
+    margin: 2vh 0;
 }
+
+
+div.clientes div.logos div.logo img {
+  width: 22.3vw;
+}
+
+
+
+
+
+
 
 /*---------------- 
 # Contacto
