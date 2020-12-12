@@ -1,3 +1,23 @@
+window.addEventListener("load", e => {
+  AOS.init();
+
+  document.querySelector("button.openbtn").onclick = openNav;
+
+document.querySelector("a.closebtn").onclick = closeNav;
+
+
+
+
+
+
+
+
+})
+
+
+
+
+
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
@@ -9,6 +29,3 @@ function openNav() {
   }
 
   
-  document.querySelector("button.openbtn").onclick = openNav;
-
-  document.querySelector("a.closebtn").onclick = closeNav;

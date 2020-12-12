@@ -150,8 +150,6 @@ span.deco.verde {
   color: #021f42;
 }
 
-
-
 .nav-menu ul {
   margin: 0;
   padding: 10px;
@@ -184,12 +182,6 @@ div.navbar-tablet-desktop {
   display: none;
 }
 
-
-
-
-
-
-
 @media screen and (min-width: 550px) {
   div.navbar {
     display: none;
@@ -204,18 +196,28 @@ div.navbar-tablet-desktop {
     top: calc(5vh + 16vh / 2 - 2vh * 2);
     /* Top del logo + width logo logo/2 - padding logo *2 */
     right: 4vh;
-
   }
 
-  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile ul li a{
-  font-size: 20px;
-  line-height: 31px;
-  text-shadow: 0px 1.5px 1.5px black;
-
-  color: #ffffff;
+  header.header#header
+    div.navbar-tablet-desktop
+    #nav-menu-container\ mobile
+    ul
+    li
+    a {
+    font-size: 20px;
+    line-height: 31px;
+    text-shadow: 0px 1.5px 1.5px black;
+    color: #ffffff;
   }
 
-
+  header.header#header
+    div.navbar-tablet-desktop
+    #nav-menu-container\ mobile
+    ul
+    li
+    a:hover {
+    color: var(--verde-clarito);
+  }
 
   div.navbar-tablet-desktop nav#nav-menu-container ul.nav-menu {
     display: flex;
@@ -239,30 +241,49 @@ div.navbar-tablet-desktop {
   }
 }
 
-
-@media screen and (min-width: 550px) and (max-width:600px) {
-  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile ul li a {
+@media screen and (min-width: 550px) and (max-width: 600px) {
+  header.header#header
+    div.navbar-tablet-desktop
+    #nav-menu-container\ mobile
+    ul
+    li
+    a {
     font-size: 13px;
     padding: 4px;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width:640px) {
-  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile ul li a {
+@media screen and (min-width: 600px) and (max-width: 640px) {
+  header.header#header
+    div.navbar-tablet-desktop
+    #nav-menu-container\ mobile
+    ul
+    li
+    a {
     font-size: 14px;
     padding: 4px;
   }
 }
 
-@media screen and (min-width: 640px) and (max-width:730px) {
-  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile ul li a {
+@media screen and (min-width: 640px) and (max-width: 730px) {
+  header.header#header
+    div.navbar-tablet-desktop
+    #nav-menu-container\ mobile
+    ul
+    li
+    a {
     font-size: 16px;
     padding: 5px;
   }
 }
 
-@media screen and (min-width: 730px) and (max-width:768px) {
-  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile ul li a {
+@media screen and (min-width: 730px) and (max-width: 768px) {
+  header.header#header
+    div.navbar-tablet-desktop
+    #nav-menu-container\ mobile
+    ul
+    li
+    a {
     font-size: 18px;
     padding: 5px;
   }
@@ -351,13 +372,12 @@ div.home {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 2.5vh;
+  padding: 2.5vh 0;
 }
 
 div.home .vector-inicio {
   display: flex;
   justify-content: center;
-  margin: 2.5vh 0;
 }
 
 div.home .vector-inicio img {
@@ -378,26 +398,42 @@ div.home div.texto-inicial p {
 # Media queries Home
 ---------*/
 
-
-
-
-
-
 @media screen and (min-width: 550px) {
+  div.main-image {
+    background-image: url(../images/Inicio.jpg);
+    height: 65vh;
+    background-size: cover;
+    /* background-attachment: fixed; */
+  }
+
   div.home {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    margin-top: 2.5vh;
   }
 
   div.home .vector-inicio img {
     margin: 0;
-    width: 25vw;
+    width: 100%;
   }
 
   div.home div.texto-inicial p {
     margin: 0;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  div.home div.texto-inicial p:first-child {
+    margin-bottom: 1vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  div.home .vector-inicio img {
+    margin: 0;
+    width: 60%;
   }
 }
 
@@ -406,12 +442,12 @@ div.home div.texto-inicial p {
 ---------*/
 div.quienes-somos {
   background-color: var(--gris-clarito);
+  padding: 2.5vh 0;
 }
 div.titulo-seccion {
   margin-bottom: 2.5vh;
   font-size: 25px;
   line-height: 38px;
-  padding-top: 1.5vh;
 }
 
 h3.seccion-verde {
@@ -449,12 +485,27 @@ div.vector-quienes-somos span.desktop img {
 ---------*/
 
 @media screen and (min-width: 550px) {
+  div.texto-quienes-somos p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
   div.vector-quienes-somos img {
     display: none;
   }
   div.vector-quienes-somos span.tablet img {
     display: block;
-    width: 50vw;
+    width: 35vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  div.vector-quienes-somos span.tablet img {
+    display: none;
+  }
+  div.vector-quienes-somos span.desktop img {
+    display: block;
   }
 }
 
@@ -518,6 +569,9 @@ div.vector-quienes-somos span.desktop img {
 /*---------- 
 # Servicios
 ---------*/
+div.servicios {
+  padding: 2.5vh 0;
+}
 div.servicios div.servicio1 div.flip-card-back {
   background-color: var(--azul);
 }
@@ -537,7 +591,6 @@ div.servicios div.servicio5 div.flip-card-back {
 
 div.servicios h3.seccion-azul {
   color: var(--azul);
-  padding-top: 2vh;
 }
 
 div.servicios div.imagen-servicio img {
@@ -577,7 +630,8 @@ div.servicios p.texto-card-servicios {
   margin: 0;
 }
 
-div.flip-card-back {
+div.card-tablet {
+  display: none;
 }
 
 div.texto-servicio1,
@@ -589,17 +643,43 @@ div.texto-servicio5 {
 
 div.servicios div.texto-servicio1 p.texto-card-servicios {
 }
-
 div.servicios div.texto-servicio2 p.texto-card-servicios {
 }
-
 div.servicios div.texto-servicio3 p.texto-card-servicios {
 }
-
 div.servicios div.texto-servicio4 p.texto-card-servicios {
 }
 div.servicios div.texto-servicio5 p.texto-card-servicios {
 }
+
+/*---------- 
+# Media queries Quienes Somos
+---------*/
+
+@media screen and (min-width: 550px) {
+  div.card-tablet {
+    display: block;
+  }
+  div.servicios p.texto-card-servicios {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    padding: 0 2vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  div.card-tablet {
+    display: none;
+  }
+
+  div.servicios p.texto-card-servicios {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+
 
 /*--------- 
 # Equipo
@@ -608,11 +688,11 @@ div.servicios div.texto-servicio5 p.texto-card-servicios {
 div.equipo {
   background: var(--azul);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 2.5vh 0;
 }
 
 h3.seccion-blanco {
   color: #ffffff;
-  padding-top: 2vh;
 }
 
 div.persona {
@@ -651,12 +731,23 @@ div.persona div.info-de-contacto img {
   margin: 0.75vh 0 2vh 0;
 }
 
+/*---------- 
+# Media queries Equpo
+---------*/
+
+@media screen and (min-width: 550px) {
+  div.persona div.foto img {
+    width: 19vh;
+  }
+}
+
 /*---------------- 
 # Porque elegirnos
 ----------------*/
 
 div.porque {
   background-color: var(--gris-clarito);
+  padding: 2.5vh 0;
 }
 
 div.porque div.porque-dato {
@@ -688,11 +779,25 @@ div.porque div.porque-dato p {
   margin: 0;
 }
 
+/*---------- 
+# Media queries Porque elegirnos
+---------*/
+
+@media screen and (min-width: 550px) {
+  div.porque div.porque-dato img {
+    width: 10vh;
+  }
+
+  div.porque div.porque-dato p {
+    line-height: 20px;
+    font-size: 19px;
+  }
+}
 /*---------------- 
 # Nuestros Clientes
 ----------------*/
 div.clientes {
-  padding-bottom: 2.5vh;
+  padding: 2.5vh 0;
 }
 
 div.clientes div.titulo-seccion h3 {
@@ -711,6 +816,24 @@ div.clientes div.logos div.logo {
 
 div.clientes div.logos div.logo img {
   width: 22.3vw;
+  transition: all 0.4s ease-in-out;
+
+}
+
+div.clientes div.logos div.logo img:hover {
+  transform: scale(1.25);
+}
+
+@media screen and (min-width: 992px) {
+  div.clientes div.logos div.logo img {
+    width: 12.5vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div.clientes div.logos div.logo img {
+    width: 8vw;
+  }
 }
 
 /*---------------- 
@@ -719,6 +842,7 @@ div.clientes div.logos div.logo img {
 
 div.contacto {
   background-color: var(--verde-clarito);
+  padding: 2.5vh 0;
 }
 
 div.contacto div.contacto-empresa {
@@ -727,7 +851,7 @@ div.contacto div.contacto-empresa {
 div.contacto div.contacto-empresa a {
   color: #fcfdfc;
 }
-div.contacto div.contacto-empresa a p {
+div.contacto div.contacto-empresa a p, div.contacto div.contacto-empresa p {
   font-size: 15px;
   color: #fcfdfc;
 }
@@ -736,6 +860,16 @@ div.contacto div.mapa iframe {
   width: 70vw;
   height: 25vh;
   padding-bottom: 2.5vh;
+}
+
+/*---------- 
+# Media queries Porque elegirnos
+---------*/
+
+@media screen and (min-width: 550px) {
+  div.contacto div.mapa iframe {
+    height: 40vh;
+  }
 }
 
 /*---------------- 
@@ -747,12 +881,12 @@ footer {
 }
 footer div.texto-footer {
   font-size: 12px;
-  line-height: 12px;
+  line-height: 10px;
   text-align: center;
   color: #fcfdfc;
 }
 footer div.texto-footer p {
-  padding-top: 5%;
+  padding-top: 2%;
 }
 footer div.texto-footer p:last-child {
   margin: 0;
