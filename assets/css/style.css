@@ -15,6 +15,10 @@
   --gris-clarito: #c4c4c433;
 }
 
+  body{
+    overflow-x: hidden
+  }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -289,6 +293,16 @@ div.navbar-tablet-desktop {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  div.navbar-tablet-desktop div#logo {
+    left: 15vh;
+  }
+
+  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile {
+    right: 20vh;
+  }
+}
+
 /*-----------------
 # Sidebar
 -----------------*/
@@ -311,7 +325,7 @@ div.navbar-tablet-desktop {
 .sidebar a {
   padding: 8px 8px 16px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 23px;
   color: #fdfdfc;
   display: block;
   transition: 0.3s;
@@ -362,9 +376,12 @@ button.openbtn {
 # Home
 ------*/
 
-div.main-image img {
+div.main-image {
   width: 100%;
-  max-height: 75vh;
+  height: 30vh;
+  background-size: cover;
+  background-image: url(../images/Inicio.jpg);
+  /* background-attachment: fixed; */
 }
 
 div.home {
@@ -383,15 +400,18 @@ div.home .vector-inicio {
 div.home .vector-inicio img {
   margin: 0;
   width: 50vw;
+  margin-bottom: 2.5vh;
 }
 div.home div.texto-inicial p {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 23px;
   text-align: center;
   color: rgba(100, 100, 100, 1);
-  margin-bottom: 0.5vh;
+}
+div.home div.texto-inicial p:first-child {
+  margin-bottom: 1.5vh;
 }
 
 /*---------- 
@@ -400,40 +420,49 @@ div.home div.texto-inicial p {
 
 @media screen and (min-width: 550px) {
   div.main-image {
-    background-image: url(../images/Inicio.jpg);
-    height: 65vh;
-    background-size: cover;
-    /* background-attachment: fixed; */
+    height: 60vh;
   }
-
-  div.home {
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-  }
-
   div.home .vector-inicio img {
     margin: 0;
-    width: 100%;
+    width: 30vh;
+    margin-bottom: 2.5vh;
   }
 
+  div.home div.texto-inicial p:first-child {
+    margin-bottom: 1vh;
+  }
   div.home div.texto-inicial p {
     margin: 0;
     font-size: 17px;
     line-height: 25px;
     text-align: center;
   }
-
-  div.home div.texto-inicial p:first-child {
-    margin-bottom: 1vh;
-  }
 }
 
+@media screen and (min-width: 768px) {
+  div.home {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 5vh 0;
+  }
+}
 @media screen and (min-width: 992px) {
-  
   div.home .vector-inicio img {
-    margin: 0;
     width: 60%;
+  }
+  div.main-image {
+    height: 65vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.main-image {
+    height: 75vh;
+  }
+
+  div.home div.texto-inicial p {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 
@@ -464,7 +493,7 @@ div.texto-quienes-somos p {
 }
 
 div.texto-quienes-somos p:first-child {
-  margin-top: 38px;
+  margin-top: 26px;
 }
 div.vector-quienes-somos {
   display: flex;
@@ -488,6 +517,7 @@ div.vector-quienes-somos span.desktop img {
   div.texto-quienes-somos p {
     font-size: 17px;
     line-height: 25px;
+    padding-left: 10vh;
   }
 
   div.vector-quienes-somos img {
@@ -500,12 +530,23 @@ div.vector-quienes-somos span.desktop img {
 }
 
 @media screen and (min-width: 992px) {
-  
   div.vector-quienes-somos span.tablet img {
     display: none;
   }
   div.vector-quienes-somos span.desktop img {
     display: block;
+    padding-top: 3.5vh;
+  }
+  div.texto-quienes-somos p {
+    padding-left: 20vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div.texto-quienes-somos p {
+    font-size: 20px;
+    line-height: 28px;
+    padding-left: 39vh;
   }
 }
 
@@ -622,7 +663,7 @@ div.servicios h4.titulo-card-servicios {
 
 div.servicios p.texto-card-servicios {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 23px;
   text-align: center;
   color: #ffffff;
@@ -668,6 +709,13 @@ div.servicios div.texto-servicio5 p.texto-card-servicios {
   }
 }
 
+@media screen and (min-width: 768px) {
+  div.servicios p.texto-card-servicios {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   div.card-tablet {
     display: none;
@@ -679,7 +727,12 @@ div.servicios div.texto-servicio5 p.texto-card-servicios {
   }
 }
 
-
+@media screen and (min-width: 1200px) {
+  div.servicios p.texto-card-servicios {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
 
 /*--------- 
 # Equipo
@@ -741,6 +794,21 @@ div.persona div.info-de-contacto img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  div.persona div.info-de-contacto h6 {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div.persona div.info-de-contacto h6 {
+    font-size: 20px;
+  }
+  div.persona div.info-de-contacto h6 {
+    margin-top: 1vh;
+  }
+}
+
 /*---------------- 
 # Porque elegirnos
 ----------------*/
@@ -775,7 +843,7 @@ div.porque div.porque-dato p {
   line-height: 17px;
   color: var(--azul);
   text-align: left;
-  font-size: 15px;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -793,6 +861,23 @@ div.porque div.porque-dato p {
     font-size: 19px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  div.porque div.porque-dato p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div.porque div.porque-dato p {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  div.porque div.porque-dato img {
+    width: 12vh;
+    margin-right:2vh;
+  }
+}
 /*---------------- 
 # Nuestros Clientes
 ----------------*/
@@ -805,8 +890,6 @@ div.clientes div.titulo-seccion h3 {
   line-height: 38px;
   text-align: center;
   color: var(--azul);
-  padding-left: 14px;
-  padding-top: 2vh;
   font-weight: 600;
 }
 
@@ -817,7 +900,6 @@ div.clientes div.logos div.logo {
 div.clientes div.logos div.logo img {
   width: 22.3vw;
   transition: all 0.4s ease-in-out;
-
 }
 
 div.clientes div.logos div.logo img:hover {
@@ -851,7 +933,8 @@ div.contacto div.contacto-empresa {
 div.contacto div.contacto-empresa a {
   color: #fcfdfc;
 }
-div.contacto div.contacto-empresa a p, div.contacto div.contacto-empresa p {
+div.contacto div.contacto-empresa a p,
+div.contacto div.contacto-empresa p {
   font-size: 15px;
   color: #fcfdfc;
 }
@@ -863,12 +946,25 @@ div.contacto div.mapa iframe {
 }
 
 /*---------- 
-# Media queries Porque elegirnos
+# Media queries Contacto
 ---------*/
 
 @media screen and (min-width: 550px) {
   div.contacto div.mapa iframe {
     height: 40vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.contacto div.contacto-empresa a p,
+  div.contacto div.contacto-empresa p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div.contacto div.contacto-empresa a p,
+  div.contacto div.contacto-empresa p {
+    font-size: 20px;
   }
 }
 
@@ -886,10 +982,10 @@ footer div.texto-footer {
   color: #fcfdfc;
 }
 footer div.texto-footer p {
-  padding-top: 2%;
+  padding: 10px 0px;
+  margin: 0;
 }
 footer div.texto-footer p:last-child {
   margin: 0;
-  padding-bottom: 2.5%;
-  padding-top: 0;
+  padding: 2px;
 }

@@ -1,5 +1,7 @@
 window.addEventListener("load", e => {
-  AOS.init();
+  AOS.init({
+    duration: 1200,
+});
 
   document.querySelector("button.openbtn").onclick = openNav;
 
