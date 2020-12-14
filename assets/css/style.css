@@ -16,7 +16,7 @@
 }
 
   body{
-    overflow-x: hidden
+    overflow: hidden
   }
 
 * {
@@ -28,6 +28,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden
+  
 }
 
 a {
@@ -987,5 +989,4 @@ footer div.texto-footer p {
 }
 footer div.texto-footer p:last-child {
   margin: 0;
-  padding: 2px;
 }
