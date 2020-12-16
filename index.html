@@ -1,523 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Principal - Hernández y Asoc.</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pagina Principal - Hernández y Asoc.</title>
+    <!-- CSS BootStrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
 
-  <!-- CSS BootStrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-
-
-
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-
-
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/images/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/images/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/images/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/images/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/images/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/images/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/images/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/images/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/images/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- CSS AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- CSS propio  -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS propio  -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<body>
-  <!-- Header -->
-  <header id="header" class="header">
-    <div class="container">
-      <div class="navbar">
-        <!-- Logo -->
-        <div id="logo">
-          <a href="#">
-            <img src="assets/images/Logo Hernández Vectorizado.svg" alt="Logo Hernández Vectorizado" />
-          </a>
-        </div>
-        <!-- Botones en nav -->
-        <nav id="nav-menu-container">
-          <button class="openbtn">☰</button>
-        </nav>
-      </div>
-
-      <div class="navbar-tablet-desktop">
-        <!-- Logo -->
-
-        <div id="logo">
-          <a href="#">
-            <img src="assets/images/Logo Hernández Vectorizado.svg" alt="Logo Hernández Vectorizado" />
-          </a>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="navbar">
+          <!-- Logo -->
+          <div id="logo">
+            <a href="#">
+              <img
+                src="assets/images/Logo Hernández Vectorizado.svg"
+                alt="Logo Hernández Vectorizado"
+              />
+            </a>
+          </div>
+          <!-- Botones en nav -->
+          <nav id="nav-menu-container">
+            <button class="openbtn">☰</button>
+          </nav>
         </div>
 
-        <!-- Botones en nav -->
+        <div class="navbar-tablet-desktop">
+          <!-- Logo -->
 
-        <nav id="nav-menu-container mobile">
-          <ul class="nav-menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#quienes-somos">Quienes Somos</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#porque">Por qué elegirnos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </nav>
+          <div id="logo">
+            <a href="#">
+              <img
+                src="assets/images/Logo Hernández Vectorizado.svg"
+                alt="Logo Hernández Vectorizado"
+              />
+            </a>
+          </div>
+
+          <!-- Botones en nav -->
+
+          <nav id="nav-menu-container mobile">
+            <ul class="nav-menu">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#quienes-somos">Quienes Somos</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#porque">Por qué elegirnos</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- SideBar -->
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn">×</a>
+          <a href="#">Inicio</a>
+          <a href="#quienes-somos">Quienes Somos</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#porque">Por qué elegirnos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div id="main"></div>
       </div>
+    </header>
+    <!-- Fin del Header -->
 
-      <!-- SideBar -->
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn">×</a>
-        <a href="#">Inicio</a>
-        <a href="#quienes-somos">Quienes Somos</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#porque">Por qué elegirnos</a>
-        <a href="#contacto">Contacto</a>
-      </div>
-      <div id="main"></div>
-    </div>
-  </header>
-  <!-- Fin del Header -->
-
-  <!-- Home -->
-  <div class="main-image">
-  </div>
-  <div class="container">
-    <div class="home">
-      <div class="vector-inicio col-xs-12 col-md-6" data-aos="fade-right">
-        <img src="assets/images/Ciclo.svg" alt="" />
-      </div>
-      <div class="texto-inicial col-xs-12 col-md-6" data-aos="fade-left">
-        <p>
-          En Estudio Hernández + Asociados brindamos servicios profesionales de Ingeniería Ambiental, Seguridad
-          Laboral, Aseguramiento de Calidad Empresarial e Interiorismo.
-        </p>
-        <p>
-          Nuestros servicios se encuentran divididos en 5 secciones de
-          trabajo, dependiendo el tipo de solución que cada cliente necesite.
-          Las mismas se pueden combinar perfectamente logrando una solución
-          integral.
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- Fin del Home -->
-
-  <!-- Quienes Somos -->
-
-  <div class="quienes-somos" id="quienes-somos">
-    
+    <!-- Home -->
+    <div class="main-image"></div>
     <div class="container">
-      <div class="titulo-seccion" data-aos="fade-right">
-        <h3 class="seccion-verde">
-          <span class="deco verde">Quienes So</span>mos
-        </h3>
-      </div>
-      <div class="texto-quienes-somos" data-aos="fade-left">
-        <p>
-          Estudio Hernández + Asociados es una empresa familiar con más de 30 años en el mercado
-          ofreciendo servicios profesionales integrales a industrias, empresas
-          y clientes particulares.
-        </p>
-        <p>
-          Nos caracterizamos por la eficacia, ética y transparencia en nuestro
-          trabajo. Contamos con profesionales reconocidos internacionalmente
-          con alta responsabilidad empresarial y capacitación continua.
-        </p>
-        <p>
-          Nuestro principal objetivo es la satisfacción de nuestros clientes
-          facilitándoles herramientas para aumentar su competitividad en el
-          mercado actual.
-        </p>
-      </div>
-      <div class="vector-quienes-somos" data-aos="fade-up">
-        <img src="assets/images/Vision, mision, valores (Mobile).svg" alt="" />
-        <span class="tablet">
-          <img src="assets/images/Vision, Mision, Valores (Tablet).svg" alt="" />
-        </span>
-        <span class="desktop">
-          <img src="assets/images/Vision, Mision, Valores (Web).svg" alt="" />
-        </span>
+      <div class="home">
+        <div class="vector-inicio col-xs-12 col-md-6" data-aos="fade-right">
+          <img src="assets/images/Ciclo.svg" alt="" />
+        </div>
+        <div class="texto-inicial col-xs-12 col-md-6" data-aos="fade-left">
+          <p>
+            En Estudio Hernández + Asociados brindamos servicios profesionales
+            de Ingeniería Ambiental, Seguridad Laboral, Aseguramiento de Calidad
+            Empresarial e Interiorismo.
+          </p>
+          <p>
+            Nuestros servicios se encuentran divididos en 5 secciones de
+            trabajo, dependiendo el tipo de solución que cada cliente necesite.
+            Las mismas se pueden combinar perfectamente logrando una solución
+            integral.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Fin de Quienes Somos -->
+    <!-- Fin del Home -->
 
-  <!-- Servicios -->
-  <div class="servicios" id="servicios">
-    
-    <div class="container">
-      <div class="titulo-seccion" data-aos="fade-right">
-        <h3 class="seccion-azul"><span class="deco azul">Servicios</span></h3>
+    <!-- Quienes Somos -->
+
+    <div class="quienes-somos" id="quienes-somos">
+      <div class="container">
+        <div class="titulo-seccion" data-aos="fade-right">
+          <h3 class="seccion-verde">
+            <span class="deco verde">Quienes So</span>mos
+          </h3>
+        </div>
+        <div class="texto-quienes-somos" data-aos="fade-left">
+          <p>
+            Estudio Hernández + Asociados es una empresa familiar con más de 30
+            años en el mercado ofreciendo servicios profesionales integrales a
+            industrias, empresas y clientes particulares.
+          </p>
+          <p>
+            Nos caracterizamos por la eficacia, ética y transparencia en nuestro
+            trabajo. Contamos con profesionales reconocidos internacionalmente
+            con alta responsabilidad empresarial y capacitación continua.
+          </p>
+          <p>
+            Nuestro principal objetivo es la satisfacción de nuestros clientes
+            facilitándoles herramientas para aumentar su competitividad en el
+            mercado actual.
+          </p>
+        </div>
+        <div class="vector-quienes-somos" data-aos="fade-up">
+          <img
+            src="assets/images/Vision, mision, valores (Mobile).svg"
+            alt=""
+          />
+          <span class="tablet">
+            <img
+              src="assets/images/Vision, Mision, Valores (Tablet).svg"
+              alt=""
+            />
+          </span>
+          <span class="desktop">
+            <img src="assets/images/Vision, Mision, Valores (Web).svg" alt="" />
+          </span>
+        </div>
       </div>
-      <div class="row">
-        <div class="servicio1 col-xs-10 col-sm-6 col-lg-6">
-          <div data-aos="zoom-in" data-aos-delay="100">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="imagen-servicio">
-                    <img src="assets/images/servicios/Ingenieria1.jpg" alt="Ingenieria" />
-                  </div>
-                  <div class="titulo-servicios">
-                    <h4 class="titulo-card-servicios">Ingeniería</h4>
-                  </div>
-                </div>
-                <div class="flip-card-back">
-                  <div class="texto-servicio1">
-                    <p class="texto-card-servicios">
-                      Ofrecemos soluciones ingenieriles para las necesidades
-                      de cada empresa teniendo en cuenta su adecuación a las
-                      limitaciones de recursos humanos y económicos,
-                      requisitos legales, de seguridad y ecológicos.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    </div>
+    <!-- Fin de Quienes Somos -->
+
+    <!-- Servicios -->
+    <div class="servicios" id="servicios">
+      <div class="container">
+        <div class="titulo-seccion" data-aos="fade-right">
+          <h3 class="seccion-azul"><span class="deco azul">Servicios</span></h3>
         </div>
-        <div class="servicio2 col-xs-10 col-sm-6 col-lg-6">
-          <div data-aos="zoom-in" data-aos-delay="100">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="imagen-servicio">
-                    <img src="assets/images/servicios/MedioAmbiente1.jpeg" alt="Medio Ambiente" />
-                  </div>
-                  <div class="titulo-servicios">
-                    <h4 class="titulo-card-servicios">Medio Ambiente</h4>
-                  </div>
-                </div>
-                <div class="flip-card-back">
-                  <div class="texto-servicio2">
-                    <p class="texto-card-servicios">
-                      Nuestros servicios están orientados a lograr que las
-                      empresas desarrollen procesos productivos sostenibles
-                      para el medio ambiente.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="servicio3 col-xs-10 col-sm-6 col-lg-4">
-          <div data-aos="zoom-in" data-aos-delay="100">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="imagen-servicio">
-                    <img src="assets/images/servicios/SistemadeGestion1.jpg" alt="Sistemas de Gestion" />
-                  </div>
-                  <div class="titulo-servicios">
-                    <h4 class="titulo-card-servicios">Sistemas de Gestión</h4>
-                  </div>
-                </div>
-                <div class="flip-card-back">
-                  <div class="texto-servicio3">
-                    <p class="texto-card-servicios">
-                      Esta División se ocupa de aumentar la competitividad de
-                      las empresas mejorando sus Sistemas de Gestión de
-                      Calidad, Ambiental, Seguridad Industrial y Eficiencia
-                      Energética.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="servicio4 col-xs-10 col-sm-6 col-lg-4">
-          <div data-aos="zoom-in" data-aos-delay="100">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="imagen-servicio">
-                    <img src="assets/images/servicios/Laboratorio1.jpg" alt="Laboratorio" />
-                  </div>
-                  <div class="titulo-servicios">
+        <div class="row">
+          <div class="servicio1 col-xs-10 col-sm-6 col-lg-6">
+            <div data-aos="zoom-in" data-aos-delay="100">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="imagen-servicio">
+                      <img
+                        src="assets/images/servicios/Ingenieria1.jpg"
+                        alt="Ingenieria"
+                      />
+                    </div>
                     <div class="titulo-servicios">
-                      <h4 class="titulo-card-servicios">
-                        Laboratorio de Mediciones Ambientales Laborales
-                      </h4>
+                      <h4 class="titulo-card-servicios">Ingeniería</h4>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="texto-servicio1">
+                      <p class="texto-card-servicios">
+                        Ofrecemos soluciones ingenieriles para las necesidades
+                        de cada empresa teniendo en cuenta su adecuación a las
+                        limitaciones de recursos humanos y económicos,
+                        requisitos legales, de seguridad y ecológicos.
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div class="flip-card-back">
-                  <div class="texto-servicio4">
-                    <p class="texto-card-servicios">
-                      Las mediciones y monitoreos que realizamos proporcionan
-                      herramientas y estrategias para la detección, evaluación
-                      y control del riesgo higiénico en la empresa o
-                      industria, protegiendo la salud de los trabajadores.
-                    </p>
+              </div>
+            </div>
+          </div>
+          <div class="servicio2 col-xs-10 col-sm-6 col-lg-6">
+            <div data-aos="zoom-in" data-aos-delay="100">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="imagen-servicio">
+                      <img
+                        src="assets/images/servicios/MedioAmbiente1.jpeg"
+                        alt="Medio Ambiente"
+                      />
+                    </div>
+                    <div class="titulo-servicios">
+                      <h4 class="titulo-card-servicios">Medio Ambiente</h4>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="texto-servicio2">
+                      <p class="texto-card-servicios">
+                        Nuestros servicios están orientados a lograr que las
+                        empresas desarrollen procesos productivos sostenibles
+                        para el medio ambiente.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="card-tablet col-sm-3"></div>
-
-        <div class="servicio5 col-xs-10 col-sm-6 col-lg-4">
-          <div data-aos="zoom-in" data-aos-delay="100">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="imagen-servicio">
-                    <img src="assets/images/servicios/Interiorismo.jpg" alt="Ingenieria" />
+          <div class="servicio3 col-xs-10 col-sm-6 col-lg-4">
+            <div data-aos="zoom-in" data-aos-delay="100">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="imagen-servicio">
+                      <img
+                        src="assets/images/servicios/SistemadeGestion1.jpg"
+                        alt="Sistemas de Gestion"
+                      />
+                    </div>
+                    <div class="titulo-servicios">
+                      <h4 class="titulo-card-servicios">Sistemas de Gestión</h4>
+                    </div>
                   </div>
-                  <div class="titulo-servicios">
-                    <h4 class="titulo-card-servicios">Interiorismo</h4>
-                  </div>
-                </div>
-                <div class="flip-card-back">
-                  <div class="texto-servicio5">
-                    <p class="texto-card-servicios">
-                      Proyectamos los espacios interiores tanto residenciales
-                      como corporativos y comerciales, teniendo en cuenta la
-                      composición estética, ergonomía, proporción, materiales
-                      e iluminación.
-                    </p>
+                  <div class="flip-card-back">
+                    <div class="texto-servicio3">
+                      <p class="texto-card-servicios">
+                        Esta División se ocupa de aumentar la competitividad de
+                        las empresas mejorando sus Sistemas de Gestión de
+                        Calidad, Ambiental, Seguridad Industrial y Eficiencia
+                        Energética.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="card-tablet col-sm-3"></div>
-
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Fin de Servicios -->
-
-  <!-- Equipo -->
-  <div class="equipo">
-    
-    <div class="container">
-      <div class="titulo-seccion" data-aos="fade-right">
-        <h3 class="seccion-blanco"><span class="deco verde">Equipo</span></h3>
-      </div>
-      <div class="row">
-        <div class="persona col-xs-10 col-sm-6 col-lg-3" data-aos="zoom-in">
-          <div class="foto">
-            <img src="assets/images/equipo/Luis Hernández.jpg" alt="Luis Hernández" />
+          <div class="servicio4 col-xs-10 col-sm-6 col-lg-4">
+            <div data-aos="zoom-in" data-aos-delay="100">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="imagen-servicio">
+                      <img
+                        src="assets/images/servicios/Laboratorio1.jpg"
+                        alt="Laboratorio"
+                      />
+                    </div>
+                    <div class="titulo-servicios">
+                      <div class="titulo-servicios">
+                        <h4 class="titulo-card-servicios">
+                          Laboratorio de Mediciones Ambientales Laborales
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="texto-servicio4">
+                      <p class="texto-card-servicios">
+                        Las mediciones y monitoreos que realizamos proporcionan
+                        herramientas y estrategias para la detección, evaluación
+                        y control del riesgo higiénico en la empresa o
+                        industria, protegiendo la salud de los trabajadores.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="info-de-contacto">
-            <h6 class="nombre-contaco">Luis Hernández</h6>
 
-            <a href="https://www.linkedin.com/in/luis-humberto-hernandez-b4597119b/"><img src="assets/images/icons/linkedin.svg" alt="Foto linkedin" /></a>
+          <div class="card-tablet col-sm-3"></div>
+
+          <div class="servicio5 col-xs-10 col-sm-6 col-lg-4">
+            <div data-aos="zoom-in" data-aos-delay="100">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="imagen-servicio">
+                      <img
+                        src="assets/images/servicios/Interiorismo.jpg"
+                        alt="Ingenieria"
+                      />
+                    </div>
+                    <div class="titulo-servicios">
+                      <h4 class="titulo-card-servicios">Interiorismo</h4>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="texto-servicio5">
+                      <p class="texto-card-servicios">
+                        Proyectamos los espacios interiores tanto residenciales
+                        como corporativos y comerciales, teniendo en cuenta la
+                        composición estética, ergonomía, proporción, materiales
+                        e iluminación.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="persona col-xs-10 col-sm-6 col-lg-3" data-aos="zoom-in">
-          <div class="foto">
-            <img src="assets/images/equipo/Hernán Farias.jpg" alt="Hernán Farias" />
-          </div>
-          <div class="info-de-contacto">
-            <h6 class="nombre-contaco">Hernán Farias</h6>
-
-            <a href="https://www.linkedin.com/in/hernan-daniel-farias-56b88163/
-            "><img src="assets/images/icons/linkedin.svg" alt="Foto linkedin" /></a>
-          </div>
-        </div>
-
-        <div class="persona col-xs-10 col-sm-6 col-lg-3" data-aos="zoom-in">
-          <div class="foto">
-            <img src="assets/images/equipo/Alejandro Navarro.jpg" alt="Alejandro Navarro" />
-          </div>
-          <div class="info-de-contacto">
-            <h6 class="nombre-contaco">Alejandro Navarro</h6>
-
-            <a href="https://www.linkedin.com/in/luis-alejandro-navarro-a315841bb/
-            "><img src="assets/images/icons/linkedin.svg" alt="Foto linkedin" /></a>
-          </div>
-        </div>
-
-        <div class="persona col-xs-10 col-sm-6 col-lg-3" data-aos="zoom-in">
-          <div class="foto">
-            <img src="assets/images/equipo/Laura Hernández.jpg" alt="Laura Hernández" />
-          </div>
-          <div class="info-de-contacto">
-            <h6 class="nombre-contaco">Laura Hernández</h6>
-
-            <a href="https://www.linkedin.com/in/laura-lucia-hernandez-a0b5851bb/
-            "><img src="assets/images/icons/linkedin.svg" alt="Foto linkedin" /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Fin de Equipo -->
-
-  <!-- Porque Elegirnos -->
-
-  <div class="porque" id="porque">
-    
-    <div class="container">
-      <div class="titulo-seccion" data-aos="fade-right">
-        <h3 class="seccion-azul">
-          <span class="deco verde">Por qué ele</span>girnos
-        </h3>
-      </div>
-      <div class="row">
-        <div class="porque-dato col-xs-12 col-md-6" data-aos="zoom-out">
-          <img src="assets/images/icons/1. Lamparita.svg" alt="" />
-          <p>
-            Porque aumentaremos su productividad gracias al ordenamiento
-            interno que se realiza para minimizar los riesgos ambientales y
-            laborales.
-          </p>
-        </div>
-        <div class="porque-dato col-xs-12 col-md-6" data-aos="zoom-out">
-          <img src="assets/images/icons/2. Oponente.svg" alt="" />
-          <p>
-            Porque mejoraremos la sostenibilidad de las empresas disminuyendo
-            los impactos ambientales de los procesos.
-          </p>
-        </div>
-        <div class="porque-dato col-xs-12 col-md-6" data-aos="zoom-out">
-          <img src="assets/images/icons/3. Cheque.svg" alt="" />
-          <p>
-            Porque evitaremos el riesgo de recibir sanciones de los organismos
-            de aplicación por incumplimiento de las nuevas leyes laborales y
-            ambientales.
-          </p>
-        </div>
-        <div class="porque-dato col-xs-12 col-md-6" data-aos="zoom-out">
-          <img src="assets/images/icons/4. Anotación.svg" alt="" />
-          <p>
-            Porque tendrán preservación de la marca y del prestigio de la
-            compañía al no registrar incidentes ambientales y laborales que
-            puedan tener repercusión pública.
-          </p>
-        </div>
-        <div class="porque-dato col-xs-12 col-md-6" data-aos="zoom-out">
-          <img src="assets/images/icons/5. Aumento.svg" alt="" />
-          <p>
-            Porque trabajaremos para preservar la marca y el prestigio de la compañía al no
-            registrar incidentes ambientales y laboraler que puedan tener repercusión pública.
-          </p>
-        </div>
-        <div class="porque-dato col-xs-12 col-md-6" data-aos="zoom-out">
-          <img src="assets/images/icons/6. Ida y vuelta.svg" alt="" />
-          <p>
-            Porque interpretaremos las necesidades de cada cliente dándole una
-            solución adecuada y resultados concretos.
-          </p>
+          <div class="card-tablet col-sm-3"></div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Fin de Porque Elegirnos -->
+    <!-- Fin de Servicios -->
 
-  <!-- Nuestros Clientes -->
-  <div class="clientes">
-    
-    <div class="logos">
+    <!-- Equipo -->
+    <div class="equipo">
       <div class="container">
         <div class="titulo-seccion" data-aos="fade-right">
-          <h3 class="seccion-azul">Nuestros Clientes</h3>
+          <h3 class="seccion-blanco"><span class="deco verde">Equipo</span></h3>
         </div>
         <div class="row">
-          <div class="col-6 col-md-4 col-lg-2 d-flex align-items-center justify-content-center logo" data-aos="zoom-in">
-            <img src="assets/images/clientes/Logo SMG.svg" alt="Logo de SMG" />
+          <div class="persona col-xs-10 col-sm-6 col-lg-3" data-aos="zoom-in">
+            <div class="foto">
+              <img
+                src="assets/images/equipo/Luis Hernández.jpg"
+                alt="Luis Hernández"
+              />
+            </div>
+            <div class="info-de-contacto">
+              <h6 class="nombre-contaco">Luis Hernández</h6>
+
+              <a
+                href="https://www.linkedin.com/in/luis-humberto-hernandez-b4597119b/"
+                ><img
+                  src="assets/images/icons/linkedin.svg"
+                  alt="Foto linkedin"
+              /></a>
+            </div>
           </div>
-          <div class="col-6 col-md-4 col-lg-2 d-flex align-items-center justify-content-center logo" data-aos="zoom-in">
-            <img src="assets/images/clientes/Logo OMINT.svg" alt="Logo de OMINT ART" />
+
+          <div class="persona col-xs-10 col-sm-6 col-lg-3" data-aos="zoom-in">
+            <div class="foto">
+              <img
+                src="assets/images/equipo/Hernán Farias.jpg"
+                alt="Hernán Farias"
+              />
+            </div>
+            <div class="info-de-contacto">
+              <h6 class="nombre-contaco">Hernán Farias</h6>
+
+              <a
+                href="https://www.linkedin.com/in/hernan-daniel-farias-56b88163/
+            "
+                ><img
+                  src="assets/images/icons/linkedin.svg"
+                  alt="Foto linkedin"
+              /></a>
+            </div>
           </div>
-          <div class="col-6 col-md-4 col-lg-2 d-flex align-items-center justify-content-center logo" data-aos="zoom-in">
-            <img src="assets/images/clientes/Logo FORD.svg" alt="Logo de FORD" />
+
+          <div class="persona col-xs-10 col-sm-6 col-lg-3" data-aos="zoom-in">
+            <div class="foto">
+              <img
+                src="assets/images/equipo/Alejandro Navarro.jpg"
+                alt="Alejandro Navarro"
+              />
+            </div>
+            <div class="info-de-contacto">
+              <h6 class="nombre-contaco">Alejandro Navarro</h6>
+
+              <a
+                href="https://www.linkedin.com/in/luis-alejandro-navarro-a315841bb/
+            "
+                ><img
+                  src="assets/images/icons/linkedin.svg"
+                  alt="Foto linkedin"
+              /></a>
+            </div>
           </div>
-          <div class="col-6 col-md-4 col-lg-2 d-flex align-items-center justify-content-center logo" data-aos="zoom-in">
-            <img src="assets/images/clientes/Logo MELAR.svg" alt="Logo de MELAR" />
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 d-flex align-items-center justify-content-center logo" data-aos="zoom-in">
-            <img src="assets/images/clientes/Logo IRAUTO.jpg" alt="Logo de Antolin Irauto" />
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 d-flex align-items-center justify-content-center logo" data-aos="zoom-in">
-            <img src="assets/images/clientes/Logo CANESTRARI.png" alt="Logo de Canestrani" />
+
+          <div class="persona col-xs-10 col-sm-6 col-lg-3" data-aos="zoom-in">
+            <div class="foto">
+              <img
+                src="assets/images/equipo/Laura Hernández.jpg"
+                alt="Laura Hernández"
+              />
+            </div>
+            <div class="info-de-contacto">
+              <h6 class="nombre-contaco">Laura Hernández</h6>
+
+              <a
+                href="https://www.linkedin.com/in/laura-lucia-hernandez-a0b5851bb/
+            "
+                ><img
+                  src="assets/images/icons/linkedin.svg"
+                  alt="Foto linkedin"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Fin de Nuestros Clientes -->
 
-  <!-- Contacto -->
-  <div class="contacto" id="contacto">
-    
-    <div class="container">
-      <div class="titulo-seccion" data-aos="fade-right">
-        <h3 class="seccion-blanco">
-          <span class="deco azul">Contacto </span>
-        </h3>
-      </div>
-      <div class="contacto-empresa">
-          <p data-aos="fade-right">
-            <span class="bold">Dirección:</span> General Pacheco, Buenos
-            Aires, Argentina
-          </p>
-        <a href="tel:+5491140348867" >
-          <p data-aos="fade-right"><span class="bold">Teléfono: </span>(+54911) 40348867</p>
-        </a>
-        <a href="mailto:info@estudiohernandezyasoc.com.ar">
-          <p data-aos="fade-right">
-            <span class="bold">Email:</span> info@estudiohernandezyasoc.com.ar
-          </p>
-        </a>
-      </div>
-      <div class="mapa" data-aos="fade-up">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74451.06860708588!2d-58.69874094519597!3d-34.4444437413476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca39ca574d823%3A0xd4fb0a11188d493e!2sGral.%20Pacheco%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1606324019575!5m2!1ses-419!2sar"
-          frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <!-- Fin de Equipo -->
+
+    <!-- Porque Elegirnos -->
+
+    <div class="porque" id="porque">
+      <div class="container">
+        <div class="titulo-seccion" data-aos="fade-right">
+          <h3 class="seccion-azul">
+            <span class="deco verde">Por qué ele</span>girnos
+          </h3>
+        </div>
+        <div class="row">
+          <div class="porque-dato col-xs-12 col-md-6" data-aos="zoom-out">
+            <img src="assets/images/icons/1. Lamparita.svg" alt="" />
+            <p>
+              Porque aumentaremos su productividad gracias al ordenamiento
+              interno que se realiza para minimizar los riesgos ambientales y
+              laborales.
+            </p>
+          </div>
+          <div class="porque-dato col-xs-12 col-md-6" data-aos="zoom-out">
+            <img src="assets/images/icons/2. Oponente.svg" alt="" />
+            <p>
+              Porque mejoraremos la sostenibilidad de las empresas disminuyendo
+              los impactos ambientales de los procesos.
+            </p>
+          </div>
+          <div class="porque-dato col-xs-12 col-md-6" data-aos="zoom-out">
+            <img src="assets/images/icons/3. Cheque.svg" alt="" />
+            <p>
+              Porque evitaremos el riesgo de recibir sanciones de los organismos
+              de aplicación por incumplimiento de las nuevas leyes laborales y
+              ambientales.
+            </p>
+          </div>
+          <div class="porque-dato col-xs-12 col-md-6" data-aos="zoom-out">
+            <img src="assets/images/icons/4. Anotación.svg" alt="" />
+            <p>
+              Porque tendrán preservación de la marca y del prestigio de la
+              compañía al no registrar incidentes ambientales y laborales que
+              puedan tener repercusión pública.
+            </p>
+          </div>
+          <div class="porque-dato col-xs-12 col-md-6" data-aos="zoom-out">
+            <img src="assets/images/icons/5. Aumento.svg" alt="" />
+            <p>
+              Porque trabajaremos para preservar la marca y el prestigio de la
+              compañía al no registrar incidentes ambientales y laboraler que
+              puedan tener repercusión pública.
+            </p>
+          </div>
+          <div class="porque-dato col-xs-12 col-md-6" data-aos="zoom-out">
+            <img src="assets/images/icons/6. Ida y vuelta.svg" alt="" />
+            <p>
+              Porque interpretaremos las necesidades de cada cliente dándole una
+              solución adecuada y resultados concretos.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Fin de Contacto -->
 
-  <!-- Footer -->
+    <!-- Fin de Porque Elegirnos -->
 
-  <footer>
-    <div class="container">
-      <div class="texto-footer">
-        <p>&copy Copyrights Hernandez y Asociados. All rights reserved.</p>
-        <p>
-          Hecho con ❤️ por
-          <a href="https://github.com/tomijais">Tomás Jais</a> y Laila Winer
-        </p>
+    <!-- Nuestros Clientes -->
+    <div class="clientes">
+      <div class="logos">
+        <div class="container">
+          <div class="titulo-seccion" data-aos="fade-right">
+            <h3 class="seccion-azul">Nuestros Clientes</h3>
+          </div>
+          <div class="row">
+            <div
+              class="col-6 col-md-4 col-lg-2 d-flex align-items-center justify-content-center logo"
+              data-aos="zoom-in"
+            >
+              <img
+                src="assets/images/clientes/Logo SMG.svg"
+                alt="Logo de SMG"
+              />
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 d-flex align-items-center justify-content-center logo"
+              data-aos="zoom-in"
+            >
+              <img
+                src="assets/images/clientes/Logo OMINT.svg"
+                alt="Logo de OMINT ART"
+              />
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 d-flex align-items-center justify-content-center logo"
+              data-aos="zoom-in"
+            >
+              <img
+                src="assets/images/clientes/Logo FORD.svg"
+                alt="Logo de FORD"
+              />
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 d-flex align-items-center justify-content-center logo"
+              data-aos="zoom-in"
+            >
+              <img
+                src="assets/images/clientes/Logo MELAR.svg"
+                alt="Logo de MELAR"
+              />
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 d-flex align-items-center justify-content-center logo"
+              data-aos="zoom-in"
+            >
+              <img
+                src="assets/images/clientes/Logo IRAUTO.jpg"
+                alt="Logo de Antolin Irauto"
+              />
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 d-flex align-items-center justify-content-center logo"
+              data-aos="zoom-in"
+            >
+              <img
+                src="assets/images/clientes/Logo CANESTRARI.png"
+                alt="Logo de Canestrani"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
+    <!-- Fin de Nuestros Clientes -->
 
-  <!-- Fin de Footer -->
+    <!-- Contacto -->
+    <div class="contacto" id="contacto">
+      <div class="container">
+        <div class="titulo-seccion" data-aos="fade-right">
+          <h3 class="seccion-blanco">
+            <span class="deco azul">Contacto </span>
+          </h3>
+        </div>
 
-<!-- JS AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <div class="contacto-empresa d-flex">
+          <div class="row">
+            <div class="logo-contacto col-xs-12 col-md-6 ">
+              <div class="contenedor-logo">
+                <img
+                src="assets/images/Logo Hernández Vectorizado.svg"
+                alt="Logo Hernandez + Asociados"
+              />
+              </div>
+            </div>
 
-  <!-- JS Propio -->
-  <script src="assets/js/app.js"></script>
-</body>
+            <div class="datos-contacto col-xs-12 col-md-6 ">
+              <p data-aos="fade-right">
+                <span class="bold">Dirección:</span> General Pacheco, Buenos
+                Aires, Argentina
+              </p>
+              <a href="tel:+5491140348867">
+                <p data-aos="fade-right">
+                  <span class="bold">Teléfono: </span>(+54911) 40348867
+                </p>
+              </a>
+              <a href="mailto:info@estudiohernandezyasoc.com.ar">
+                <p data-aos="fade-right">
+                  <span class="bold">Email:</span>
+                  info@estudiohernandezyasoc.com.ar
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
 
+        <div class="mapa" data-aos="fade-up">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74451.06860708588!2d-58.69874094519597!3d-34.4444437413476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca39ca574d823%3A0xd4fb0a11188d493e!2sGral.%20Pacheco%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1606324019575!5m2!1ses-419!2sar"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de Contacto -->
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="container">
+        <div class="texto-footer">
+          <p>&copy Copyrights Hernandez y Asociados. All rights reserved.</p>
+          <p>
+            Hecho con ❤️ por
+            <a href="https://github.com/tomijais">Tomás Jais</a> y Laila Winer
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Fin de Footer -->
+
+    <!-- JS AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JS Propio -->
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>
