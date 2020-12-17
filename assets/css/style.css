@@ -520,7 +520,7 @@ div.vector-quienes-somos {
   margin: 2.5vh 0;
 }
 div.vector-quienes-somos img {
-  width: 60vw;
+  width: 50vw;
 }
 
 div.vector-quienes-somos span.tablet img,
@@ -996,6 +996,7 @@ div.contacto div.mapa iframe {
   div.contacto div.contacto-empresa div.logo-contacto div.contenedor-logo {
     width: 100%;
     margin-bottom: 0;
+    -webkit-max-width:70%;
   }
 
   div.contacto div.contacto-empresa div.logo-contacto img {
