@@ -577,6 +577,7 @@ div.vector-quienes-somos span.desktop img {
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -588,6 +589,7 @@ div.vector-quienes-somos span.desktop img {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  
   -webkit-box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
   box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
@@ -596,12 +598,14 @@ div.vector-quienes-somos span.desktop img {
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   color: white;
+  -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
 
 /* Style the back side */
 .flip-card-back {
   color: white;
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 
   display: flex;
