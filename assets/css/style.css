@@ -243,6 +243,7 @@ div.navbar-tablet-desktop {
   #header div.navbar-tablet-desktop div#logo a img {
     padding: 2vh;
     width: 18vh;
+    min-width: 100px;
   }
 }
 
