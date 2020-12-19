@@ -198,7 +198,7 @@ div.navbar-tablet-desktop {
 
   header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile {
     position: absolute;
-    top: calc(5vh + 16vh / 2 - 2vh * 2);
+    top: calc(5vh + 18vh / 2 - 2vh * 2);
     /* Top del logo + width logo logo/2 - padding logo *2 */
     right: 4vh;
   }
@@ -242,7 +242,7 @@ div.navbar-tablet-desktop {
 
   #header div.navbar-tablet-desktop div#logo a img {
     padding: 2vh;
-    width: 16vh;
+    width: 18vh;
   }
 }
 
@@ -296,10 +296,10 @@ div.navbar-tablet-desktop {
 
 @media screen and (min-width: 992px) {
   #header div.navbar-tablet-desktop div#logo a img {
-    width: 18vh;
+    width: 21vh;
   }
   header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile {
-    top: calc(5vh + 18vh / 2 - 2vh * 2);
+    top: calc(5vh + 21vh / 2 - 2vh * 2);
   }
   header.header#header
     div.navbar-tablet-desktop
