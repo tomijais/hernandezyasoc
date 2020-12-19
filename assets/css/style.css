@@ -1011,15 +1011,15 @@ div.contacto div.mapa iframe {
   div.contacto div.contacto-empresa div.logo-contacto img {
     width: 100%;
   }
-  div.contacto div.contacto-empresa a p,
-  div.contacto div.contacto-empresa p {
+  div.contacto div.contacto-empresa div.datos-contacto a p,
+  div.contacto div.contacto-empresa div.datos-contacto p {
     font-size: 17px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  div.contacto div.contacto-empresa a p,
-  div.contacto div.contacto-empresa p {
+  div.contacto div.contacto-empresa div.datos-contacto a p,
+  div.contacto div.contacto-empresa div.datos-contacto p {
     font-size: 20px;
   }
 }
