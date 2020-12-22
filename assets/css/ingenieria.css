@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;500;600;700&display=swap");
 
 /*------  
 # Root
@@ -15,9 +15,9 @@
   --gris-clarito: #c4c4c433;
 }
 
-  body{
-    overflow: hidden
-  }
+body {
+  overflow: hidden;
+}
 
 * {
   box-sizing: border-box;
@@ -28,8 +28,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden
-  
+  overflow-x: hidden;
 }
 
 a {
@@ -58,31 +57,345 @@ span.deco.verde {
   border-bottom: 2px solid var(--verde-clarito);
 }
 
+li {
+  list-style-type: none;
+}
+
+div.fondo-azul {
+  background-color: var(--azul);
+  color: white;
+}
+/*-------------
+# Header
+-------------*/
+#header {
+  background: #ffffff;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  width: 10vh;
+}
+
+/*----------------
+# Navigation Menu
+  ----------------*/
+/* Nav Menu Essentials */
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+/* Nav Meu Container */
+#nav-menu-container {
+}
+
+@media (min-width: 768px) {
+  #nav-menu-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #nav-menu-container button {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  #nav-menu-container ul {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 8px 8px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: #555;
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 400;
+  font-size: 18px;
+  outline: none;
+  letter-spacing: 0;
+  transition: 0.3s;
+}
+
+.nav-menu li:hover > a,
+.nav-menu > .menu-active > a {
+  color: #021f42;
+}
+
+.nav-menu ul {
+  margin: 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #fff;
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 5px 10px;
+  color: #333;
+  transition: 0.3s;
+  display: block;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.nav-menu ul li:hover > a {
+  color: #021f42;
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
+@media screen and (min-width: 550px) {
+}
+
+@media screen and (min-width: 550px) and (max-width: 600px) {
+}
+
+@media screen and (min-width: 600px) and (max-width: 640px) {
+}
+
+@media screen and (min-width: 640px) and (max-width: 730px) {
+}
+
+@media screen and (min-width: 730px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+/*-----------------
+# Sidebar
+-----------------*/
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #a0cc04bf;
+
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity: 0.8;
+}
+
+.sidebar a {
+  padding: 8px 8px 16px 32px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #fdfdfc;
+  display: block;
+  transition: 0.3s;
+  text-shadow: 0px 3px 3px var(--azul);
+  line-height: 20px;
+  text-align: right;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+button.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--verde-clarito);
+  border: 1px solid var(--verde-clarito);
+  background-color: #ffffff;
+  padding: 0px 9px;
+}
+
+.openbtn:hover {
+  color: var(--verde-clarito);
+}
+
+#main {
+  transition: margin-left 0.5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+/*-------
+# Home
+------*/
+
+div.main-image {
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  background-image: url(../images/sub/1.Ingenieria/1.jpg);
+  /* background-attachment: fixed; */
+}
+
+/*---------- 
+# Media queries Home
+---------*/
+
+@media screen and (min-width: 550px) {
+  div.main-image {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+  div.main-image {
+    height: 65vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.main-image {
+    height: 75vh;
+  }
+}
+
+/* Seguridad e Higiene Laboral */
+
+div.texto-servicio-derecha {
+}
+
+div.texto-servicio-derecha ul li {
+  display: flex;
+}
+
+div.texto-servicio-derecha ul li p {
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+  line-height: 14px;
+}
+
+div.texto-servicio-derecha ul li img.flechita {
+  width: 14px;
+  margin-right: 3vw;
+  display: flex;
+  align-self: flex-start;
+}
+
+div.imagen-trans1 {
+  background-image: url(../images/sub/1.Ingenieria/2.jpg);
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+    /* Set a background color that will be displayed
+     while the background image is loading */
+     background-color: #464646;
+  
+  height: 30vh;
+}
+
+@media only screen and (max-width: 767px) {
+  div.imagen-trans1 {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+    background-image: url(../images/sub/1.Ingenieria/mobile/2\ \(Mobile\).jpg);
+  }
+}
 
 
 
 
-
-
-
+/* Servicios a Aseguradoras de Riesgo del Trabajo (ART) */
+/* Ensayos de Rutina y de Extensión de Vida Útil para Recipientes a Presión con y sin fuego */
+/* Seguridad e Higiene Laboral */
+/*  */
+/*  */
+/*  */
 
 /*---------------- 
 # Footer
 ----------------*/
 
 footer {
-    background-color: var(--azul);
-  }
-  footer div.texto-footer {
-    font-size: 12px;
-    line-height: 10px;
-    text-align: center;
-    color: #fcfdfc;
-  }
-  footer div.texto-footer p {
-    padding: 10px 0px;
-    margin: 0;
-  }
-  footer div.texto-footer p:last-child {
-    margin: 0;
-  }
+  background-color: var(--azul);
+}
+footer div.texto-footer {
+  font-size: 12px;
+  line-height: 10px;
+  text-align: center;
+  color: #fcfdfc;
+}
+footer div.texto-footer p {
+  padding: 10px 0px;
+  margin: 0;
+}
+footer div.texto-footer p:last-child {
+  margin: 0;
+}

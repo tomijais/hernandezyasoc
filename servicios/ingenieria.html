@@ -1,77 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ingenieria - Hernández y Asoc.</title>
-      <!-- CSS BootStrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <!-- CSS BootStrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- CSS AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS propio  -->
+    <link rel="stylesheet" href="/assets/css/ingenieria.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="navbar">
+          <!-- Logo -->
+          <div id="logo">
+            <a href="#">
+              <img
+                src="../assets/images/Logo Hernández Vectorizado.svg"
+                alt="Logo Hernández Vectorizado"
+              />
+            </a>
+          </div>
+          <!-- Botones en nav -->
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li><a href="../index.html#">Inicio</a></li>
+              <li><a href="../index.html#quienes-somos">Quienes Somos</a></li>
+              <li><a href="../index.html#servicios">Servicios</a></li>
+              <li><a href="../index.html#porque">Por qué elegirnos</a></li>
+              <li><a href="../index.html#contacto">Contacto</a></li>
+            </ul>
+            <button class="openbtn">☰</button>
+          </nav>
+        </div>
+
+        <!-- SideBar -->
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn">×</a>
+          <a href="#">Inicio</a>
+          <a href="#quienes-somos">Quienes Somos</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#porque">Por qué elegirnos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div id="main"></div>
+      </div>
+    </header>
+    <!-- Fin del Header -->
+
+    <!-- Home -->
+    <div class="main-image"></div>
+    <!-- Fin del Home -->
+
+    <!-- Seguridad e Higiene Laboral -->
+    <div class="servicio fondo-azul">
+      <div class="container">
+        <div class="titulo-seccion" data-aos="fade-right">
+          <h3 class="seccion-verde">
+            <span class="deco verde">Seguridad e Higie</span>ne Laboral
+          </h3>
+        </div>
+
+        <div class="texto-servicio-derecha">
+          <ul>
+            <li> <img src="../assets/images/icons/arrow-circle-right-solid.svg" class="flechita"> <p>Cobertura profesional según Ley de Seguridad e Higiene Nº 19.587.</p> </li>
+            <li> <img src="../assets/images/icons/arrow-circle-right-solid.svg" class="flechita"> <p>Realización de auditorías en planta.</p> </li>
+            <li> <img src="../assets/images/icons/arrow-circle-right-solid.svg" class="flechita"> <p>Estudios de Ergonomía.</p></li>
+            <li> <img src="../assets/images/icons/arrow-circle-right-solid.svg" class="flechita"> <p>Cursos de capacitación sobre Higiene y Seguridad Laboral.</p></li>
+            <li> <img src="../assets/images/icons/arrow-circle-right-solid.svg" class="flechita"> <p>Proyectos y planos de lucha contra incendios y evacuación.</p></li>
+            <li> <img src="../assets/images/icons/arrow-circle-right-solid.svg" class="flechita"> <p>Cálculo de Carga de Fuego, Estudio Antisiniestral.</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="imagen-trans1"></div>
 
 
 
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/images/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
 
 
-  <!-- CSS AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!-- CSS propio  -->
-    <link rel="stylesheet" href="/assets/css/ingenieria.css">
-</head>
-<body>
+    <!-- Servicios a Aseguradoras de Riesgo del Trabajo (ART) -->
+
+    <div class="servicio ">
+      <div class="container">
+        <div class="titulo-seccion" data-aos="fade-right">
+          <h3 class="seccion-verde">
+            <span class="deco verde">Seguridad e Higie</span>ne Laboral
+          </h3>
+        </div>
+
+        <div class="texto-servicio-derecha">
+          <ul>
+            <li></li>            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="imagen-trans2"></div>
+
+
+    <!-- Ensayos de Rutina y de Extensión de Vida Útil para Recipientes a Presión con y sin fuego -->
+
+    <div class="servicio">
+      <div class="container">
+        <div class="titulo-seccion" data-aos="fade-right">
+          <h3 class="seccion-verde">
+            <span class="deco verde">Seguridad e Higie</span>ne Laboral
+          </h3>
+        </div>
+
+        <div class="texto-servicio-derecha">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="imagen-trans3"></div>
+
+
+    <!-- Auditorias de Seguridad y Ambientales de Instalaciones de Almacenamiento de Hidrocarburos -->
+
+    <div class="servicio">
+      <div class="container">
+        <div class="titulo-seccion" data-aos="fade-right">
+          <h3 class="seccion-verde">
+            <span class="deco verde">Seguridad e Higie</span>ne Laboral
+          </h3>
+        </div>
+
+        <div class="texto-servicio-derecha">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="imagen-trans4"></div>
+    
+
+    <!-- Dirección Técnica en Talleres de Reparación y Modificación de Vehículos de Pasajeros y Carga de Jurisdicción Nacional según Ley 24.449 de Tránsito y Seguridad Vial.  -->
+
+    <div class="servicio">
+      <div class="container">
+        <div class="titulo-seccion" data-aos="fade-right">
+          <h3 class="seccion-verde">
+            <span class="deco verde">Seguridad e Higie</span>ne Laboral
+          </h3>
+        </div>
+
+        <div class="texto-servicio-derecha">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="imagen-trans5"></div>
+    
+    <!-- Proyectos y planos electromecánicos -->
     
 
 
+    <!-- Proyectos en HVAC (Aire Acondicionado, Calefacción, Ventilación y Refrigeración) -->
 
 
+    <div class="servicio">
+      <div class="container">
+        <div class="titulo-seccion" data-aos="fade-right">
+          <h3 class="seccion-verde">
+            <span class="deco verde">Proyectos en HVAC (Aire Acondicionado, Calefacción, Ventilación y Refrigeración)</span>
+          </h3>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-  <!-- Footer -->
-
-  <footer>
-    <div class="container">
-      <div class="texto-footer">
-        <p>&copy Copyrights Hernandez y Asociados. All rights reserved.</p>
-        <p>
-          Hecho con ❤️ por
-          <a href="https://github.com/tomijais">Tomás Jais</a> y Laila Winer
-        </p>
+        <div class="texto-servicio-derecha">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </footer>
 
-  <!-- Fin de Footer -->
 
-   <!-- JS AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <div class="servicio">
+      <div class="container">
+        <div class="titulo-seccion" data-aos="fade-right">
+          <h3 class="seccion-verde">
+            <span class="deco verde">Seguridad e Higie</span>ne Laboral
+          </h3>
+        </div>
 
-<!-- JS Propio -->
-<script src="assets/js/app.js"></script> 
-</body>
+        <div class="texto-servicio-derecha">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="imagen-trans6"></div>
+
+
+
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="container">
+        <div class="texto-footer">
+          <p>&copy Copyrights Hernandez y Asociados. All rights reserved.</p>
+          <p>
+            Hecho con ❤️ por
+            <a href="https://github.com/tomijais">Tomás Jais</a> y Laila Winer
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Fin de Footer -->
+
+    <!-- JS AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JS Propio -->
+    <script src="../assets/js/app.js"></script>
+  </body>
 </html>
