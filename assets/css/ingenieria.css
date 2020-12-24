@@ -41,9 +41,9 @@ a:hover {
   text-decoration: none;
 }
 
-span.deco {
+/* span.deco {
   padding-left: 14px;
-}
+} */
 
 span.bold {
   font-weight: 600;
@@ -60,11 +60,88 @@ span.deco.verde {
 li {
   list-style-type: none;
 }
+ul {
+  margin: 0;
+}
 
 div.fondo-azul {
   background-color: var(--azul);
   color: white;
 }
+
+div.imagen-trans{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  height: 20vh;
+}
+
+div.imagen-trans.uno{
+  background-image: url(../images/sub/1.Ingenieria/2.jpg);
+}
+div.imagen-trans.dos{
+  background-image: url(../images/sub/1.Ingenieria/3.jpg);
+}
+div.imagen-trans.tres{
+  background-image: url(../images/sub/1.Ingenieria/4.jpg);
+}
+div.imagen-trans.cuatro{
+  background-image: url(../images/sub/1.Ingenieria/5.jpg);
+}
+div.imagen-trans.cinco{
+  background-image: url(../images/sub/1.Ingenieria/6.jpg);
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+  div.imagen-trans.uno {
+    background-image: url(../images/sub/1.Ingenieria/mobile/2\ \(Mobile\).jpg);
+  }
+  div.imagen-trans.dos {
+    background-image: url(../images/sub/1.Ingenieria/mobile/3\ \(Mobile\).jpg);
+  }
+  div.imagen-trans.tres {
+    background-image: url(../images/sub/1.Ingenieria/mobile/4\ \(Mobile\).jpg);
+  }
+  div.imagen-trans.cuatro{
+    background-image: url(../images/sub/1.Ingenieria/mobile/5\ \(Mobile\).jpg);
+  }
+  div.imagen-trans.cinco {
+    background-image: url(../images/sub/1.Ingenieria/mobile/6\ \(Mobile\).jpg);
+  }
+}
+
+
+div.servicio{
+  padding: 2.5vh 0;
+}
+
+
+div.titulo-seccion {
+  margin-bottom: 2.5vh;
+  font-size: 25px;
+  line-height: 38px;
+}
+div.titulo-seccion-izquierda {
+  margin-bottom: 2.5vh;
+  font-size: 25px;
+  line-height: 38px;
+}
+div.titulo-seccion-izquierda h3{
+  text-align: right;
+}
+
+div.titulo-seccion-izquierda h3 span.deco {
+  padding-right: 14px;
+}
+
+
+
+
 /*-------------
 # Header
 -------------*/
@@ -317,9 +394,9 @@ div.main-image {
   }
 }
 
-/* Seguridad e Higiene Laboral */
 
 div.texto-servicio-derecha {
+
 }
 
 div.texto-servicio-derecha ul li {
@@ -327,10 +404,10 @@ div.texto-servicio-derecha ul li {
 }
 
 div.texto-servicio-derecha ul li p {
-  font-size: 14px;
-  margin: 0;
-  text-align: left;
-  line-height: 14px;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: left;
+    margin: 0;
 }
 
 div.texto-servicio-derecha ul li img.flechita {
@@ -338,37 +415,33 @@ div.texto-servicio-derecha ul li img.flechita {
   margin-right: 3vw;
   display: flex;
   align-self: flex-start;
+  margin-top: 7px;
 }
 
-div.imagen-trans1 {
-  background-image: url(../images/sub/1.Ingenieria/2.jpg);
+div.texto-servicio-izquierda {
 
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-  /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
-  background-attachment: fixed;
-  /* This is what makes the background image rescale based
-     on the container's size */
-  background-size: cover;
-  
-    /* Set a background color that will be displayed
-     while the background image is loading */
-     background-color: #464646;
-  
-  height: 30vh;
 }
 
-@media only screen and (max-width: 767px) {
-  div.imagen-trans1 {
-    /* The file size of this background image is 93% smaller
-       to improve page load speed on mobile internet connections */
-    background-image: url(../images/sub/1.Ingenieria/mobile/2\ \(Mobile\).jpg);
+div.texto-servicio-izquierda ul li {
+  display: flex;
+  justify-content: flex-end;
   }
+
+div.texto-servicio-izquierda ul li p {
+    font-size: 14px;
+    line-height: 23px;
+    text-align: right;
+    margin: 0;
 }
 
+div.texto-servicio-izquierda ul li img.flechita {
+  width: 14px;
+  margin-left: 3vw;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 7px;
+
+}
 
 
 
