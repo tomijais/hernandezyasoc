@@ -17,6 +17,7 @@
 
 body {
   overflow: hidden;
+  font-family: "Titillium Web", sans-serif;
 }
 
 * {
@@ -63,13 +64,16 @@ li {
 ul {
   margin: 0;
 }
+h3 {
+  font-size: 18px;
+}
 
 div.fondo-azul {
   background-color: var(--azul);
   color: white;
 }
 
-div.imagen-trans{
+div.imagen-trans {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -78,24 +82,21 @@ div.imagen-trans{
   height: 20vh;
 }
 
-div.imagen-trans.uno{
+div.imagen-trans.uno {
   background-image: url(../images/sub/1.Ingenieria/2.jpg);
 }
-div.imagen-trans.dos{
+div.imagen-trans.dos {
   background-image: url(../images/sub/1.Ingenieria/3.jpg);
 }
-div.imagen-trans.tres{
+div.imagen-trans.tres {
   background-image: url(../images/sub/1.Ingenieria/4.jpg);
 }
-div.imagen-trans.cuatro{
+div.imagen-trans.cuatro {
   background-image: url(../images/sub/1.Ingenieria/5.jpg);
 }
-div.imagen-trans.cinco{
+div.imagen-trans.cinco {
   background-image: url(../images/sub/1.Ingenieria/6.jpg);
 }
-
-
-
 
 @media only screen and (max-width: 767px) {
   div.imagen-trans.uno {
@@ -107,7 +108,7 @@ div.imagen-trans.cinco{
   div.imagen-trans.tres {
     background-image: url(../images/sub/1.Ingenieria/mobile/4\ \(Mobile\).jpg);
   }
-  div.imagen-trans.cuatro{
+  div.imagen-trans.cuatro {
     background-image: url(../images/sub/1.Ingenieria/mobile/5\ \(Mobile\).jpg);
   }
   div.imagen-trans.cinco {
@@ -115,32 +116,27 @@ div.imagen-trans.cinco{
   }
 }
 
-
-div.servicio{
+div.servicio {
   padding: 2.5vh 0;
 }
-
 
 div.titulo-seccion {
   margin-bottom: 2.5vh;
   font-size: 25px;
   line-height: 38px;
 }
-div.titulo-seccion-izquierda {
+div.titulo-seccion-derecha {
   margin-bottom: 2.5vh;
   font-size: 25px;
   line-height: 38px;
 }
-div.titulo-seccion-izquierda h3{
+div.titulo-seccion-derecha h3 {
   text-align: right;
 }
 
-div.titulo-seccion-izquierda h3 span.deco {
+div.titulo-seccion-derecha h3 span.deco {
   padding-right: 14px;
 }
-
-
-
 
 /*-------------
 # Header
@@ -201,15 +197,12 @@ div.titulo-seccion-izquierda h3 span.deco {
 #nav-menu-container {
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   #nav-menu-container {
     display: flex;
     justify-content: flex-end;
     margin: 0 0 0 0;
   }
-}
-
-@media (min-width: 768px) {
   #nav-menu-container button {
     display: none;
   }
@@ -394,9 +387,7 @@ div.main-image {
   }
 }
 
-
 div.texto-servicio-derecha {
-
 }
 
 div.texto-servicio-derecha ul li {
@@ -404,10 +395,10 @@ div.texto-servicio-derecha ul li {
 }
 
 div.texto-servicio-derecha ul li p {
-    font-size: 14px;
-    line-height: 23px;
-    text-align: left;
-    margin: 0;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: left;
+  margin: 0;
 }
 
 div.texto-servicio-derecha ul li img.flechita {
@@ -419,19 +410,18 @@ div.texto-servicio-derecha ul li img.flechita {
 }
 
 div.texto-servicio-izquierda {
-
 }
 
 div.texto-servicio-izquierda ul li {
   display: flex;
   justify-content: flex-end;
-  }
+}
 
 div.texto-servicio-izquierda ul li p {
-    font-size: 14px;
-    line-height: 23px;
-    text-align: right;
-    margin: 0;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: right;
+  margin: 0;
 }
 
 div.texto-servicio-izquierda ul li img.flechita {
@@ -440,17 +430,111 @@ div.texto-servicio-izquierda ul li img.flechita {
   display: flex;
   align-self: flex-start;
   margin-top: 7px;
-
 }
 
+div.titulo-seccion-derecha h3.seccion-verde,
+div.titulo-seccion h3.seccion-verde {
+  border-bottom: 2px solid var(--verde-clarito);
+  position: relative;
+  padding-bottom: 5px;
+}
 
+div.titulo-seccion-derecha h3.seccion-verde::after,
+div.titulo-seccion h3.seccion-verde::after {
+  content: " ";
+  position: absolute;
+  width: 2000px; /* any really large number */
+  height: 2px; /* same height as border */
+  background: white; /* to cover the border */
+  top: 100%;
+}
 
-/* Servicios a Aseguradoras de Riesgo del Trabajo (ART) */
-/* Ensayos de Rutina y de Extensión de Vida Útil para Recipientes a Presión con y sin fuego */
+div.servicio.fondo-azul div.titulo-seccion-derecha h3.seccion-verde::after,
+div.servicio.fondo-azul div.titulo-seccion h3.seccion-verde::after {
+  background: var(--azul); /* to cover the border */
+}
+
 /* Seguridad e Higiene Laboral */
-/*  */
-/*  */
-/*  */
+div.seguridad div.titulo-seccion h3.seccion-verde::after {
+  left: 40%;
+}
+/* Servicios a Aseguradoras de Riesgo del Trabajo (ART) */
+div.art div.titulo-seccion-derecha h3.seccion-verde::after {
+  right: 50%;
+}
+/* Ensayos de Rutina y de Extensión de Vida Útil para Recipientes a Presión con y sin fuego */
+div.rutina div.titulo-seccion h3.seccion-verde::after {
+  left: 54%;
+}
+/* Auditorias de Seguridad y Ambientales de Instalaciones de Almacenamiento de Hidrocarburos */
+div.auditoria div.titulo-seccion-derecha h3.seccion-verde::after {
+  right: 90%;
+}
+/* Dirección Técnica en Talleres de Reparación y Modificación de Vehículos de Pasajeros y Carga de Jurisdicción Nacional según Ley 24.449 de Tránsito y Seguridad Vial */
+div.direc div.titulo-seccion h3.seccion-verde::after {
+  left: 70%;
+}
+/* Proyectos y planos electromecánicos */
+div.planos div.titulo-seccion-derecha h3.seccion-verde::after {
+  right: 50%;
+}
+/* Proyectos en HVAC (Aire Acondicionado, Calefacción, Ventilación y Refrigeración) */
+div.aire div.titulo-seccion h3.seccion-verde::after {
+  left: 80%;
+}
+/* Proyectos de Energía Solar */
+div.solar div.titulo-seccion-derecha h3.seccion-verde::after {
+  right: 60%;
+}
+
+/*---------------- 
+# NavFooter
+----------------*/
+
+div.navfooter {
+}
+
+div.navfooter div.logo {
+}
+div.navfooter div.logo img {
+  width: 50%;
+}
+
+div.navfooter div.menu {
+  border-left: 3px solid var(--verde-clarito);
+  padding-left: 10px;
+  margin: 2.5vh 0;
+}
+div.navfooter div.menu h5 {
+  font-weight: 600;
+  font-size: 16px;
+}
+div.navfooter div.menu p {
+  margin: 0;
+
+}
+div.navfooter div.menu p a {
+}
+
+div.navfooter div.contacto {
+  border-left: 3px solid var(--verde-clarito);
+  padding-left: 10px;
+}
+div.navfooter div.contacto h5 {
+  font-weight: 600;
+  font-size: 16px;
+}
+div.navfooter div.contacto p {
+  margin: 0;
+
+}
+div.navfooter div.contacto p a {
+}
+
+div.navfooter {
+}
+div.navfooter {
+}
 
 /*---------------- 
 # Footer

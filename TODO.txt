@@ -1,3 +1,2 @@
-Arreglar hover en safari
-
-Hacer servicios
+Terminar servicios
+chequear fotos fixed's
