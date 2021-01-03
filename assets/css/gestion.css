@@ -71,9 +71,12 @@ div.imagen-trans {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-color: #464646;
-  height: 20vh;
+  height: 30vh;
 }
 
 div.imagen-trans.uno {
@@ -87,7 +90,7 @@ div.imagen-trans.tres {
 }
 
 div.servicio {
-  padding: 2.5vh 0;
+  padding: 2.5vh 0 3.5vh 0;
 }
 
 div.titulo-seccion {
@@ -97,8 +100,8 @@ div.titulo-seccion-derecha {
   margin-bottom: 1.5vh;
 }
 
-div.titulo-seccion h3 {
-  margin-bottom: 2.5vh;
+div.titulo-seccion h3{
+  margin-bottom: calc(2.5vh - 5px); /* 5px es la distancia de padding que separa el texto de la linea */
   font-size: 18px;
 }
 
@@ -116,34 +119,27 @@ div.titulo-seccion-derecha h3 span.deco {
 -------------*/
 @media screen and (min-width: 768px) {
   div.titulo-seccion h3 {
-    margin-bottom: 3.5vh;
-    font-size: 28px;
+    margin-bottom: calc(3.5vh - 5px); /* 5px es la distancia de padding que separa el texto de la linea */
+    font-size: 24px;
   }
 
   div.titulo-seccion-derecha h3 {
-    text-align: right;
-    font-size: 28px;
+    font-size: 24px;
   }
 
-  div.servicio {
-    padding: 3.5vh 0;
-  }
+
 }
 
 @media screen and (min-width: 992px) {
   div.titulo-seccion h3 {
-    margin-bottom: 3.5vh;
-    font-size: 35px;
+    font-size: 30px;
   }
 
   div.titulo-seccion-derecha h3 {
-    text-align: right;
-    font-size: 35px;
+    font-size: 30px;
   }
 
-  div.servicio {
-    padding: 3.5vh 0;
-  }
+
 }
 
 /*-------------
@@ -218,26 +214,35 @@ div.titulo-seccion-derecha h3 span.deco {
 #nav-menu-container {
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
+
   #nav-menu-container {
     display: flex;
     justify-content: flex-end;
     margin: 0 0 0 0;
   }
+
   #nav-menu-container button {
     display: none;
   }
+  #nav-menu-container ul {
+    display: block;
+  }
+  
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #nav-menu-container ul {
     display: none;
+  }
+  #nav-menu-container button {
+    display: block;
   }
 }
 
 /* Nav Meu Styling */
 .nav-menu a {
-  padding: 8px 8px;
+  padding: 8px 0px 8px 8px;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -294,7 +299,7 @@ div.titulo-seccion-derecha h3 span.deco {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #a0cc04bf;
+  background-color: var(--verde-clarito);
 
   overflow-x: hidden;
   transition: 0.5s;
@@ -306,7 +311,7 @@ div.titulo-seccion-derecha h3 span.deco {
   padding: 8px 8px 16px 32px;
   text-decoration: none;
   font-size: 23px;
-  color: #fdfdfc;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
   text-shadow: 0px 3px 3px var(--azul);
@@ -315,7 +320,9 @@ div.titulo-seccion-derecha h3 span.deco {
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
+  color:var(--azul);
+  text-shadow: none;
+
 }
 
 .sidebar .closebtn {
@@ -359,6 +366,9 @@ button.openbtn {
 div.main-image {
   width: 100%;
   height: 30vh;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-image: url(../images/sub/3.Sist\ de\ Gestion/1.png);
   /* background-attachment: fixed; */
@@ -410,6 +420,8 @@ div.texto-servicio-derecha ul li img.flechita {
   display: flex;
   align-self: flex-start;
   margin-top: 5px;
+  margin-right: 3px;
+
 }
 
 div.texto-servicio-izquierda {
@@ -432,6 +444,7 @@ div.texto-servicio-izquierda ul li img.flechita {
   margin-left: 3vw;
   display: flex;
   align-self: flex-start;
+  margin-right: 3px;
   margin-top: 5px;
 }
 
@@ -499,29 +512,91 @@ div.servicio.fondo-gris div.titulo-seccion h3.seccion-verde::after {
 }
 
 
+/*---------------- 
+# Linitas
+----------------*/
+
+
+
+
 /* Implementación de Sistemas de Gestión de Calidad ISO 9001, Gestión Ambiental
 ISO 14.001, Gestión de Seguridad y Salud Ocupacional 45001, Gestión de la
 Energía ISO 50001 */
 div.implementacion div.titulo-seccion h3.seccion-verde::after {
-  left: 50%;
+  left: 22.5ch;
 }
 
 
 /* Asesoramiento para el cumplimiento de todos los Requisitos Normativos ISO */
 div.asesoramiento div.titulo-seccion-derecha h3.seccion-verde::after {
-  right: 50%;
+  right: 18.5ch;
 }
 
 /* Somos Auditores Acreditados para el desarrollo de SGA´S ISO 9001, 14.001, 45001
 e ISO 50001. */
 div.somos div.titulo-seccion h3.seccion-verde::after {
-  left: 50%;
+  left: 17.5ch;
 }
 
 /* Uso Eficiente de la Energía. Ahorro de Energía */
 div.uso div.titulo-seccion-derecha h3.seccion-verde::after {
-  right: 80%;
+  right: 15.5ch;
 }
+
+
+/*---------------- 
+# Media Queries Linitas
+----------------*/
+
+
+@media screen and (min-width:768px){
+  div.implementacion div.titulo-seccion h3.seccion-verde::after {
+    left: 34.5ch;
+  }
+  
+  
+  /* Asesoramiento para el cumplimiento de todos los Requisitos Normativos ISO */
+  div.asesoramiento div.titulo-seccion-derecha h3.seccion-verde::after {
+    right: 20.5ch;
+  }
+  
+  /* Somos Auditores Acreditados para el desarrollo de SGA´S ISO 9001, 14.001, 45001
+  e ISO 50001. */
+  div.somos div.titulo-seccion h3.seccion-verde::after {
+    left: 23.5ch;
+  }
+  
+  /* Uso Eficiente de la Energía. Ahorro de Energía */
+  div.uso div.titulo-seccion-derecha h3.seccion-verde::after {
+    right: 27.5ch;
+  }
+
+}
+
+@media screen and (min-width:992px){
+
+  div.implementacion div.titulo-seccion h3.seccion-verde::after {
+    left: 16.5ch;
+  }
+  
+  
+  /* Asesoramiento para el cumplimiento de todos los Requisitos Normativos ISO */
+  div.asesoramiento div.titulo-seccion-derecha h3.seccion-verde::after {
+    right: 50.5ch;
+  }
+  
+  /* Somos Auditores Acreditados para el desarrollo de SGA´S ISO 9001, 14.001, 45001
+  e ISO 50001. */
+  div.somos div.titulo-seccion h3.seccion-verde::after {
+    left: 17.5ch;
+  }
+  
+  /* Uso Eficiente de la Energía. Ahorro de Energía */
+  div.uso div.titulo-seccion-derecha h3.seccion-verde::after {
+    right: 27.5ch;
+  }
+}
+
 
 
 /*---------------- 
@@ -529,6 +604,7 @@ div.uso div.titulo-seccion-derecha h3.seccion-verde::after {
 ----------------*/
 
 div.navfooter {
+  padding-left: 10px;
 }
 
 div.navfooter div.logo {
@@ -544,33 +620,46 @@ div.navfooter div.menu {
   padding-left: 10px;
   margin: 2.5vh 0;
 }
-div.navfooter div.menu h5 {
-  font-weight: 600;
-  font-size: 16px;
-}
-div.navfooter div.menu p {
-  margin: 0;
-}
-div.navfooter div.menu p a {
-}
-
 div.navfooter div.contacto {
   border-left: 3px solid var(--verde-clarito);
   padding-left: 10px;
+  margin: 2.5vh 0;
+  max-width: 262px;
 }
-div.navfooter div.contacto h5 {
+
+div.navfooter div.menu h5,div.navfooter div.contacto h5 {
   font-weight: 600;
   font-size: 16px;
 }
-div.navfooter div.contacto p {
+div.navfooter div.menu p,div.navfooter div.contacto p {
   margin: 0;
+
 }
-div.navfooter div.contacto p a {
+div.navfooter div.menu p a,div.navfooter div.contacto p a {
 }
 
-div.navfooter {
+
+
+
+
+/*---------------- 
+# Media Queries NavFooter
+----------------*/
+
+@media screen and (min-width:768px){
+  div.navfooter {
+    padding-left: 0;
+  }
 }
-div.navfooter {
+
+@media screen and (min-width:992px){
+  div.navfooter div.contacto h5,div.navfooter div.menu h5 {
+    font-size: 20px;
+  }
+  div.navfooter div.contacto p,div.navfooter div.menu p {
+    font-size: 18px;
+  
+  }
 }
 
 /*---------------- 
@@ -582,14 +671,25 @@ footer {
 }
 footer div.texto-footer {
   font-size: 12px;
-  line-height: 10px;
+  line-height: 14px;
   text-align: center;
   color: #fcfdfc;
 }
 footer div.texto-footer p {
-  padding: 10px 0px;
+  padding: 7px 0px;
   margin: 0;
 }
 footer div.texto-footer p:last-child {
   margin: 0;
+}
+
+@media screen and (min-width:992px){
+  footer div.texto-footer p {
+    padding-top: 10px;
+    margin: 0;
+  }
+  footer div.texto-footer p:last-child {
+    padding: 0;
+    padding-bottom: 3px;
+  }
 }

@@ -71,9 +71,14 @@ div.imagen-trans {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
   background-color: #464646;
-  height: 20vh;
+  height: 30vh;
+
+
+  -moz-background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
 div.imagen-trans.uno {
@@ -89,8 +94,11 @@ div.imagen-trans.cuatro {
   background-image: url(../images/sub/5.Interiorismo/5.jpg);
 }
 
+
+
+
 div.servicio {
-  padding: 2.5vh 0;
+  padding: 2.5vh 0 3.5vh 0;
 }
 
 div.titulo-seccion {
@@ -101,13 +109,15 @@ div.titulo-seccion-derecha {
 }
 
 div.titulo-seccion h3 {
-  margin-bottom: 2.5vh;
-  font-size: 18px;
+  margin-bottom: calc(
+    2.5vh - 5px
+  ); /* 5px es la distancia de padding que separa el texto de la linea */
+  font-size: 17px;
 }
 
 div.titulo-seccion-derecha h3 {
   text-align: right;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 div.titulo-seccion-derecha h3 span.deco {
@@ -119,33 +129,24 @@ div.titulo-seccion-derecha h3 span.deco {
 -------------*/
 @media screen and (min-width: 768px) {
   div.titulo-seccion h3 {
-    margin-bottom: 3.5vh;
-    font-size: 28px;
+    margin-bottom: calc(
+      3.5vh - 5px
+    ); /* 5px es la distancia de padding que separa el texto de la linea */
+    font-size: 24px;
   }
 
   div.titulo-seccion-derecha h3 {
-    text-align: right;
-    font-size: 28px;
-  }
-
-  div.servicio {
-    padding: 3.5vh 0;
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 992px) {
   div.titulo-seccion h3 {
-    margin-bottom: 3.5vh;
-    font-size: 35px;
+    font-size: 30px;
   }
 
   div.titulo-seccion-derecha h3 {
-    text-align: right;
-    font-size: 35px;
-  }
-
-  div.servicio {
-    padding: 3.5vh 0;
+    font-size: 30px;
   }
 }
 
@@ -221,26 +222,33 @@ div.titulo-seccion-derecha h3 span.deco {
 #nav-menu-container {
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   #nav-menu-container {
     display: flex;
     justify-content: flex-end;
     margin: 0 0 0 0;
   }
+
   #nav-menu-container button {
     display: none;
   }
+  #nav-menu-container ul {
+    display: block;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #nav-menu-container ul {
     display: none;
+  }
+  #nav-menu-container button {
+    display: block;
   }
 }
 
 /* Nav Meu Styling */
 .nav-menu a {
-  padding: 8px 8px;
+  padding: 8px 0px 8px 8px;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -286,6 +294,12 @@ div.titulo-seccion-derecha h3 span.deco {
   margin: 0;
 }
 
+@media screen and (min-width:992px){
+  .nav-menu a {
+    padding: 8px;
+  }
+}
+
 /*-----------------
 # Sidebar
 -----------------*/
@@ -297,7 +311,7 @@ div.titulo-seccion-derecha h3 span.deco {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #a0cc04bf;
+  background-color: var(--verde-clarito);
 
   overflow-x: hidden;
   transition: 0.5s;
@@ -309,7 +323,7 @@ div.titulo-seccion-derecha h3 span.deco {
   padding: 8px 8px 16px 32px;
   text-decoration: none;
   font-size: 23px;
-  color: #fdfdfc;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
   text-shadow: 0px 3px 3px var(--azul);
@@ -318,7 +332,8 @@ div.titulo-seccion-derecha h3 span.deco {
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: var(--azul);
+  text-shadow: none;
 }
 
 .sidebar .closebtn {
@@ -362,6 +377,9 @@ button.openbtn {
 div.main-image {
   width: 100%;
   height: 30vh;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-image: url(../images/sub/5.Interiorismo/1.jpg);
   /* background-attachment: fixed; */
@@ -390,12 +408,6 @@ div.main-image {
   }
 }
 
-
-/*---------------
- - TITULO REDONDEADO 
-------------------*/
-
-
 div.titulo-redondeado{
   background-color: var(--azul-clarito);
   border-radius: 25px;
@@ -403,13 +415,16 @@ div.titulo-redondeado{
 }
 
 div.titulo-redondeado h3{
-  padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
+  padding: 10px 10px 11px 20px;
   color: white;
 }
 
-
-
+@media screen and (min-width: 550px) {
+  div.titulo-redondeado{
+    max-width: 500px;
+  }
+}
 
 /*----------- 
 -#Texto Servicios
@@ -434,6 +449,7 @@ div.texto-servicio-derecha ul li img.flechita {
   display: flex;
   align-self: flex-start;
   margin-top: 5px;
+  margin-right: 3px;
 }
 
 div.texto-servicio-izquierda {
@@ -457,6 +473,7 @@ div.texto-servicio-izquierda ul li img.flechita {
   display: flex;
   align-self: flex-start;
   margin-top: 5px;
+  margin-right: 3px;
 }
 
 /*-------------
@@ -522,57 +539,166 @@ div.servicio.fondo-celeste div.titulo-seccion h3.seccion-azul::after {
   background: var(--azul-clarito); /* to cover the border */
 }
 
-
-
+/*---------------- 
+#  Linitas
+----------------*/
 
 /* Asesoramiento de diseño interior y decoración para diferentes espacios */
 div.interior div.titulo-seccion h3.seccion-azul::after {
-  left: 50%;
+  left: 23.5ch;
 }
 
 /* Desarrollo de proyectos para obras nuevas y remodelaciones parciales e
 integrales. */
 div.desarrollo div.titulo-seccion-derecha h3.seccion-azul::after {
-  right: 54%;
+  right: 16.5ch;
 }
 
 /* Documentación de obra */
 div.obra div.titulo-seccion h3.seccion-azul::after {
-  left: 50%;
+  left: 19.5ch;
 }
 
 /* Propuesta de diseño */
 div.propuesta div.titulo-seccion h3.seccion-azul::after {
-  left: 50%;
+  left: 16.5ch;
 }
 
 /* Realización de Renders (opcional) */
 div.renders div.titulo-seccion-derecha h3.seccion-azul::after {
-  right: 40%;
+  right: 19.5ch;
 }
 
 /* Supervisión y dirección de obra. */
 div.direccion div.titulo-seccion h3.seccion-azul::after {
-  left: 60%;
+  left: 19.5ch;
 }
 
 /* Acompañamiento en las distintas etapas de la obra. */
 div.etapas div.titulo-seccion-derecha h3.seccion-azul::after {
-  right: 40%;
+  right: 15.5ch;
 }
 
 /* Mobiliario. */
 div.mobiliario div.titulo-seccion h3.seccion-azul::after {
-  left: 40%;
+  left: 9.5ch;
 }
 /* Acompañamiento en las distintas etapas de la obra. */
 div.covid div.titulo-seccion-derecha h3.seccion-azul::after {
-  right: 40%;
+  right: 19.5ch;
 }
 
 /* Asesoría online. */
 div.asesoria div.titulo-seccion h3.seccion-azul::after {
-  left: 40%;
+  left: 12.5ch;
+}
+
+/*---------------- 
+# Media Queries Linitas
+----------------*/
+
+@media screen and (min-width: 768px) {
+  /* Asesoramiento de diseño interior y decoración para diferentes espacios */
+div.interior div.titulo-seccion h3.seccion-azul::after {
+  left: 20.5ch;
+}
+
+/* Desarrollo de proyectos para obras nuevas y remodelaciones parciales e
+integrales. */
+div.desarrollo div.titulo-seccion-derecha h3.seccion-azul::after {
+  right: 22.5ch;
+}
+
+/* Documentación de obra */
+div.obra div.titulo-seccion h3.seccion-azul::after {
+  left: 15.5ch;
+}
+
+/* Propuesta de diseño */
+div.propuesta div.titulo-seccion h3.seccion-azul::after {
+  left: 16.5ch;
+}
+
+/* Realización de Renders (opcional) */
+div.renders div.titulo-seccion-derecha h3.seccion-azul::after {
+  right: 19.5ch;
+}
+
+/* Supervisión y dirección de obra. */
+div.direccion div.titulo-seccion h3.seccion-azul::after {
+  left: 19.5ch;
+}
+
+/* Acompañamiento en las distintas etapas de la obra. */
+div.etapas div.titulo-seccion-derecha h3.seccion-azul::after {
+  right: 32.5ch;
+}
+
+/* Mobiliario. */
+div.mobiliario div.titulo-seccion h3.seccion-azul::after {
+  left: 9.5ch;
+}
+/* Acompañamiento en las distintas etapas de la obra. */
+div.covid div.titulo-seccion-derecha h3.seccion-azul::after {
+  right: 22.5ch;
+}
+
+/* Asesoría online. */
+div.asesoria div.titulo-seccion h3.seccion-azul::after {
+  left: 13.5ch;
+}
+}
+
+@media screen and (min-width: 992px) {
+  /* Asesoramiento de diseño interior y decoración para diferentes espacios */
+div.interior div.titulo-seccion h3.seccion-azul::after {
+  left: 41.5ch;
+}
+
+/* Desarrollo de proyectos para obras nuevas y remodelaciones parciales e
+integrales. */
+div.desarrollo div.titulo-seccion-derecha h3.seccion-azul::after {
+  right: 19.5ch;
+}
+
+/* Documentación de obra */
+div.obra div.titulo-seccion h3.seccion-azul::after {
+  left: 19.5ch;
+}
+
+/* Propuesta de diseño */
+div.propuesta div.titulo-seccion h3.seccion-azul::after {
+  left: 19.5ch;
+}
+
+/* Realización de Renders (opcional) */
+div.renders div.titulo-seccion-derecha h3.seccion-azul::after {
+  right: 19.5ch;
+}
+
+/* Supervisión y dirección de obra. */
+div.direccion div.titulo-seccion h3.seccion-azul::after {
+  left: 19.5ch;
+}
+
+/* Acompañamiento en las distintas etapas de la obra. */
+div.etapas div.titulo-seccion-derecha h3.seccion-azul::after {
+  right: 19.5ch;
+}
+
+/* Mobiliario. */
+div.mobiliario div.titulo-seccion h3.seccion-azul::after {
+  left: 8.5ch;
+}
+/* Acompañamiento en las distintas etapas de la obra. */
+div.covid div.titulo-seccion-derecha h3.seccion-azul::after {
+  right: 17.5ch;
+}
+
+/* Asesoría online. */
+div.asesoria div.titulo-seccion h3.seccion-azul::after {
+  left: 13.5ch;
+}
 }
 
 /*---------------- 
@@ -580,6 +706,7 @@ div.asesoria div.titulo-seccion h3.seccion-azul::after {
 ----------------*/
 
 div.navfooter {
+  padding-left: 10px;
 }
 
 div.navfooter div.logo {
@@ -595,35 +722,46 @@ div.navfooter div.menu {
   padding-left: 10px;
   margin: 2.5vh 0;
 }
-div.navfooter div.menu h5 {
-  font-weight: 600;
-  font-size: 16px;
-}
-div.navfooter div.menu p {
-  margin: 0;
-}
-div.navfooter div.menu p a {
-}
-
 div.navfooter div.contacto {
   border-left: 3px solid var(--verde-clarito);
   padding-left: 10px;
+  margin: 2.5vh 0;
+  max-width: 262px;
 }
+
+div.navfooter div.menu h5,
 div.navfooter div.contacto h5 {
   font-weight: 600;
   font-size: 16px;
 }
+div.navfooter div.menu p,
 div.navfooter div.contacto p {
   margin: 0;
 }
+div.navfooter div.menu p a,
 div.navfooter div.contacto p a {
 }
 
-div.navfooter {
-}
-div.navfooter {
+/*---------------- 
+# Media Queries NavFooter
+----------------*/
+
+@media screen and (min-width: 768px) {
+  div.navfooter {
+    padding-left: 0;
+  }
 }
 
+@media screen and (min-width: 992px) {
+  div.navfooter div.contacto h5,
+  div.navfooter div.menu h5 {
+    font-size: 20px;
+  }
+  div.navfooter div.contacto p,
+  div.navfooter div.menu p {
+    font-size: 18px;
+  }
+}
 /*---------------- 
 # Footer
 ----------------*/
@@ -633,14 +771,25 @@ footer {
 }
 footer div.texto-footer {
   font-size: 12px;
-  line-height: 10px;
+  line-height: 14px;
   text-align: center;
   color: #fcfdfc;
 }
 footer div.texto-footer p {
-  padding: 10px 0px;
+  padding: 7px 0px;
   margin: 0;
 }
 footer div.texto-footer p:last-child {
   margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+  footer div.texto-footer p {
+    padding-top: 10px;
+    margin: 0;
+  }
+  footer div.texto-footer p:last-child {
+    padding: 0;
+    padding-bottom: 3px;
+  }
 }
