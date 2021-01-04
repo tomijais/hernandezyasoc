@@ -42,8 +42,6 @@ a:hover {
   text-decoration: none;
 }
 
-
-
 span.bold {
   font-weight: 600;
 }
@@ -63,7 +61,6 @@ ul {
   margin: 0;
 }
 
-
 div.fondo-azul {
   background-color: var(--azul);
   color: white;
@@ -79,6 +76,12 @@ div.imagen-trans {
   background-size: cover;
   background-color: #464646;
   height: 30vh;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  div.imagen-trans {
+    background-attachment: scroll;
+  }
 }
 
 div.imagen-trans.uno {
@@ -97,15 +100,9 @@ div.imagen-trans.cinco {
   background-image: url(../images/sub/1.Ingenieria/6.jpg);
 }
 
-
 div.servicio {
   padding: 2.5vh 0 3.5vh 0;
-  
 }
-
-
-
-
 
 div.titulo-seccion {
   margin-bottom: 1.5vh;
@@ -114,8 +111,10 @@ div.titulo-seccion-derecha {
   margin-bottom: 1.5vh;
 }
 
-div.titulo-seccion h3{
-  margin-bottom: calc(2.5vh - 5px); /* 5px es la distancia de padding que separa el texto de la linea */
+div.titulo-seccion h3 {
+  margin-bottom: calc(
+    2.5vh - 5px
+  ); /* 5px es la distancia de padding que separa el texto de la linea */
   font-size: 17px;
 }
 
@@ -133,15 +132,15 @@ div.titulo-seccion-derecha h3 span.deco {
 -------------*/
 @media screen and (min-width: 768px) {
   div.titulo-seccion h3 {
-    margin-bottom: calc(3.5vh - 5px); /* 5px es la distancia de padding que separa el texto de la linea */
+    margin-bottom: calc(
+      3.5vh - 5px
+    ); /* 5px es la distancia de padding que separa el texto de la linea */
     font-size: 24px;
   }
 
   div.titulo-seccion-derecha h3 {
     font-size: 24px;
   }
-
-
 }
 
 @media screen and (min-width: 992px) {
@@ -152,8 +151,6 @@ div.titulo-seccion-derecha h3 span.deco {
   div.titulo-seccion-derecha h3 {
     font-size: 30px;
   }
-
-
 }
 
 /*-------------
@@ -180,7 +177,6 @@ div.titulo-seccion-derecha h3 span.deco {
 @media screen and (min-width: 992px) {
   #header div.navbar div#logo a img {
     width: 17vh;
-    
   }
 }
 /*----------------
@@ -230,7 +226,6 @@ div.titulo-seccion-derecha h3 span.deco {
 }
 
 @media (min-width: 768px) {
-
   #nav-menu-container {
     display: flex;
     justify-content: flex-end;
@@ -243,7 +238,6 @@ div.titulo-seccion-derecha h3 span.deco {
   #nav-menu-container ul {
     display: block;
   }
-  
 }
 
 @media (max-width: 768px) {
@@ -303,9 +297,6 @@ div.titulo-seccion-derecha h3 span.deco {
   margin: 0;
 }
 
-
-
-
 /*-----------------
 # Sidebar
 -----------------*/
@@ -338,9 +329,8 @@ div.titulo-seccion-derecha h3 span.deco {
 }
 
 .sidebar a:hover {
-  color:var(--azul);
+  color: var(--azul);
   text-shadow: none;
-
 }
 
 .sidebar .closebtn {
@@ -415,7 +405,6 @@ div.main-image {
   }
 }
 
-
 /*----------- 
 -#Texto Servicios
 -----------*/
@@ -440,7 +429,6 @@ div.texto-servicio-derecha ul li img.flechita {
   align-self: flex-start;
   margin-top: 5px;
   margin-right: 3px;
-
 }
 
 div.texto-servicio-izquierda {
@@ -466,9 +454,6 @@ div.texto-servicio-izquierda ul li img.flechita {
   margin-top: 5px;
   margin-right: 3px;
 }
-
-
-
 
 /*-------------
 # Media Queries Texto
@@ -511,17 +496,6 @@ div.texto-servicio-izquierda ul li img.flechita {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 div.titulo-seccion-derecha h3.seccion-verde,
 div.titulo-seccion h3.seccion-verde {
   border-bottom: 2px solid var(--verde-clarito);
@@ -544,17 +518,9 @@ div.servicio.fondo-azul div.titulo-seccion h3.seccion-verde::after {
   background: var(--azul); /* to cover the border */
 }
 
-
-
-
-
-
-
-
 /*---------------- 
 # Linitas
 ----------------*/
-
 
 /* Seguridad e Higiene Laboral */
 div.seguridad div.titulo-seccion h3.seccion-verde::after {
@@ -583,10 +549,10 @@ div.direc div.titulo-seccion h3.seccion-verde::after {
 /* Proyectos y planos electromecánicos */
 div.planos div.titulo-seccion-derecha h3.seccion-verde::after {
   right: 23.5ch;
-}/* Proyectos en HVAC (Aire Acondicionado, Calefacción, Ventilación y Refrigeración) */
+} /* Proyectos en HVAC (Aire Acondicionado, Calefacción, Ventilación y Refrigeración) */
 div.aire div.titulo-seccion h3.seccion-verde::after {
   left: 21.5ch;
-}/* Proyectos de Energía Solar */
+} /* Proyectos de Energía Solar */
 div.solar div.titulo-seccion-derecha h3.seccion-verde::after {
   right: 21.5ch;
 }
@@ -596,40 +562,40 @@ div.solar div.titulo-seccion-derecha h3.seccion-verde::after {
 ----------------*/
 
 @media screen and (min-width: 768px) {
-/* Seguridad e Higiene Laboral */
-div.seguridad div.titulo-seccion h3.seccion-verde::after {
-  left: 19.5ch;
-}
+  /* Seguridad e Higiene Laboral */
+  div.seguridad div.titulo-seccion h3.seccion-verde::after {
+    left: 19.5ch;
+  }
 
-/* Servicios a Aseguradoras de Riesgo del Trabajo (ART) */
-div.art div.titulo-seccion-derecha h3.seccion-verde::after {
-  right: 35.5ch;
-}
+  /* Servicios a Aseguradoras de Riesgo del Trabajo (ART) */
+  div.art div.titulo-seccion-derecha h3.seccion-verde::after {
+    right: 35.5ch;
+  }
 
-/* Ensayos de Rutina y de Extensión de Vida Útil para Recipientes a Presión con y sin fuego */
-div.rutina div.titulo-seccion h3.seccion-verde::after {
-  left: 19.5ch;
-}
+  /* Ensayos de Rutina y de Extensión de Vida Útil para Recipientes a Presión con y sin fuego */
+  div.rutina div.titulo-seccion h3.seccion-verde::after {
+    left: 19.5ch;
+  }
 
-/* Auditorias de Seguridad y Ambientales de Instalaciones de Almacenamiento de Hidrocarburos */
-div.auditoria div.titulo-seccion-derecha h3.seccion-verde::after {
-  right: 26.5ch;
-}
+  /* Auditorias de Seguridad y Ambientales de Instalaciones de Almacenamiento de Hidrocarburos */
+  div.auditoria div.titulo-seccion-derecha h3.seccion-verde::after {
+    right: 26.5ch;
+  }
 
-/* Dirección Técnica en Talleres de Reparación y Modificación de Vehículos de Pasajeros y Carga de Jurisdicción Nacional según Ley 24.449 de Tránsito y Seguridad Vial */
-div.direc div.titulo-seccion h3.seccion-verde::after {
-  left: 28.5ch;
-}
-/* Proyectos y planos electromecánicos */
-div.planos div.titulo-seccion-derecha h3.seccion-verde::after {
-  right: 23.5ch;
-}/* Proyectos en HVAC (Aire Acondicionado, Calefacción, Ventilación y Refrigeración) */
-div.aire div.titulo-seccion h3.seccion-verde::after {
-  left: 17.5ch;
-}/* Proyectos de Energía Solar */
-div.solar div.titulo-seccion-derecha h3.seccion-verde::after {
-  right: 21.5ch;
-}
+  /* Dirección Técnica en Talleres de Reparación y Modificación de Vehículos de Pasajeros y Carga de Jurisdicción Nacional según Ley 24.449 de Tránsito y Seguridad Vial */
+  div.direc div.titulo-seccion h3.seccion-verde::after {
+    left: 28.5ch;
+  }
+  /* Proyectos y planos electromecánicos */
+  div.planos div.titulo-seccion-derecha h3.seccion-verde::after {
+    right: 23.5ch;
+  } /* Proyectos en HVAC (Aire Acondicionado, Calefacción, Ventilación y Refrigeración) */
+  div.aire div.titulo-seccion h3.seccion-verde::after {
+    left: 17.5ch;
+  } /* Proyectos de Energía Solar */
+  div.solar div.titulo-seccion-derecha h3.seccion-verde::after {
+    right: 21.5ch;
+  }
 }
 
 /*---------------- 
@@ -660,44 +626,39 @@ div.navfooter div.contacto {
   max-width: 262px;
 }
 
-div.navfooter div.menu h5,div.navfooter div.contacto h5 {
+div.navfooter div.menu h5,
+div.navfooter div.contacto h5 {
   font-weight: 600;
   font-size: 16px;
 }
-div.navfooter div.menu p,div.navfooter div.contacto p {
+div.navfooter div.menu p,
+div.navfooter div.contacto p {
   margin: 0;
-
 }
-div.navfooter div.menu p a,div.navfooter div.contacto p a {
+div.navfooter div.menu p a,
+div.navfooter div.contacto p a {
 }
-
-
-
-
 
 /*---------------- 
 # Media Queries NavFooter
 ----------------*/
 
-@media screen and (min-width:768px){
+@media screen and (min-width: 768px) {
   div.navfooter {
     padding-left: 0;
   }
 }
 
-@media screen and (min-width:992px){
-  div.navfooter div.contacto h5,div.navfooter div.menu h5 {
+@media screen and (min-width: 992px) {
+  div.navfooter div.contacto h5,
+  div.navfooter div.menu h5 {
     font-size: 20px;
   }
-  div.navfooter div.contacto p,div.navfooter div.menu p {
+  div.navfooter div.contacto p,
+  div.navfooter div.menu p {
     font-size: 18px;
-  
   }
 }
-
-
-
-
 
 /*---------------- 
 # Footer
@@ -713,16 +674,15 @@ footer div.texto-footer {
   color: #fcfdfc;
 }
 footer div.texto-footer p {
-  padding-top: 7px   ;
+  padding-top: 7px;
   margin: 0;
 }
 footer div.texto-footer p:last-child {
-  padding-top: 7px   ;
-  padding-bottom: 3px   ;
-
+  padding-top: 7px;
+  padding-bottom: 3px;
 }
 
-@media screen and (min-width:992px){
+@media screen and (min-width: 992px) {
   footer div.texto-footer p {
     padding-top: 10px;
     margin: 0;
