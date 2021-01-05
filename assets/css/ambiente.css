@@ -79,6 +79,13 @@ div.imagen-trans {
   height: 30vh;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  div.imagen-trans {
+    background-attachment: scroll;
+  }
+}
+
+
 div.imagen-trans.uno {
   background-image: url(../images/sub/2.Medio\ Ambiente//2.jpg);
 }

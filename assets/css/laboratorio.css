@@ -77,12 +77,14 @@ div.imagen-trans {
   background-size: cover;
   background-color: #464646;
   height: 30vh;
-
-  /* -moz-background-size: auto 50%;
-  -webkit-background-size: auto 50%;
-  -o-background-size: auto 50%;
-  background-size: auto 50%; */
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+  div.imagen-trans {
+    background-attachment: scroll;
+  }
+}
+
 
 div.imagen-trans.uno {
   background-image: url(../images/sub/4.Laboratorio/2.jpg);

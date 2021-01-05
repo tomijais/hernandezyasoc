@@ -71,15 +71,20 @@ div.imagen-trans {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-color: #464646;
   height: 30vh;
-
-
-  -moz-background-size: cover;
--webkit-background-size: cover;
--o-background-size: cover;
-background-size: cover;
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+  div.imagen-trans {
+    background-attachment: scroll;
+  }
+}
+
 
 div.imagen-trans.uno {
   background-image: url(../images/sub/5.Interiorismo/2.jpg);
