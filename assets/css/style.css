@@ -67,7 +67,7 @@ span.deco.verde {
 #header #logo img {
   padding: 0;
   margin: 0;
-  width: 10vh;
+  width: 13vh;
 }
 
 /*----------------
@@ -121,17 +121,21 @@ span.deco.verde {
     justify-content: flex-end;
     margin: 0 0 0 0;
   }
-}
 
-@media (min-width: 768px) {
   #nav-menu-container button {
     display: none;
   }
+  #nav-menu-container ul {
+    display: block;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #nav-menu-container ul {
     display: none;
+  }
+  #nav-menu-container button {
+    display: block;
   }
 }
 
@@ -187,7 +191,7 @@ div.navbar-tablet-desktop {
   display: none;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 768px) {
   div.navbar {
     display: none;
   }
@@ -198,7 +202,7 @@ div.navbar-tablet-desktop {
 
   header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile {
     position: absolute;
-    top: calc(5vh + 18vh / 2 - 2vh * 2);
+    top: calc(5vh + 12vh / 2 - 2vh * 2);
     /* Top del logo + width logo logo/2 - padding logo *2 */
     right: 4vh;
   }
@@ -240,67 +244,31 @@ div.navbar-tablet-desktop {
   div.navbar-tablet-desktop div#logo a {
   }
 
+  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile {
+    top: calc(5vh + 18vh / 2 - 2vh * 2);
+    /* Top del logo + width logo logo/2 - padding logo *2 */
+    right: 4vh;
+  }
   #header div.navbar-tablet-desktop div#logo a img {
     padding: 2vh;
     width: 18vh;
     min-width: 100px;
   }
-}
-
-@media screen and (min-width: 550px) and (max-width: 600px) {
-  header.header#header
-    div.navbar-tablet-desktop
-    #nav-menu-container\ mobile
-    ul
-    li
-    a {
-    font-size: 13px;
-    padding: 4px;
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 640px) {
-  header.header#header
-    div.navbar-tablet-desktop
-    #nav-menu-container\ mobile
-    ul
-    li
-    a {
-    font-size: 14px;
-    padding: 4px;
-  }
-}
-
-@media screen and (min-width: 640px) and (max-width: 730px) {
-  header.header#header
-    div.navbar-tablet-desktop
-    #nav-menu-container\ mobile
-    ul
-    li
-    a {
-    font-size: 16px;
-    padding: 5px;
-  }
-}
-
-@media screen and (min-width: 730px) and (max-width: 768px) {
-  header.header#header
-    div.navbar-tablet-desktop
-    #nav-menu-container\ mobile
-    ul
-    li
-    a {
-    font-size: 18px;
-    padding: 5px;
+  .nav-menu a {
+    padding: 8px 8px 8px 0;
   }
 }
 
 @media screen and (min-width: 992px) {
   #header div.navbar-tablet-desktop div#logo a img {
-    width: 21vh;
+    width: 23vh;
+    right: 5vh;
   }
   header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile {
-    top: calc(5vh + 21vh / 2 - 2vh * 2);
+    top: calc(5vh + 23vh / 2 - 2vh * 2);
+  }
+  .nav-menu a {
+    padding: 8px 8px 8px 8px;
   }
   header.header#header
     div.navbar-tablet-desktop
@@ -607,7 +575,7 @@ div.vector-quienes-somos span.desktop img {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  
+
   -webkit-box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
   box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
@@ -962,7 +930,6 @@ div.contacto div.contacto-empresa div.logo-contacto div.contenedor-logo {
   border-radius: 50%;
   width: 35%;
   margin-bottom: 2vh;
-  
 }
 
 div.contacto div.contacto-empresa div.logo-contacto img {
@@ -1005,8 +972,7 @@ div.contacto div.mapa iframe {
 
   div.contacto div.contacto-empresa div.logo-contacto img {
     width: 35%;
-  padding: 25px;
-
+    padding: 25px;
   }
 
   div.contacto div.contacto-empresa div.logo-contacto img {

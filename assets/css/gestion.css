@@ -79,6 +79,13 @@ div.imagen-trans {
   height: 30vh;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  div.imagen-trans {
+    background-attachment: scroll;
+  }
+}
+
+
 div.imagen-trans.uno {
   background-image: url(../images/sub/3.Sist\ de\ Gestion/2.jpg);
 }
@@ -152,7 +159,7 @@ div.titulo-seccion-derecha h3 span.deco {
 #header #logo img {
   padding: 0;
   margin: 0;
-  width: 10vh;
+  width: 13vh;
   min-width: 100px;
   max-width: 200px;
 }
@@ -288,6 +295,11 @@ div.titulo-seccion-derecha h3 span.deco {
   margin: 0;
 }
 
+@media screen and (min-width:992px){
+  .nav-menu a {
+    padding: 8px;
+  }
+}
 /*-----------------
 # Sidebar
 -----------------*/

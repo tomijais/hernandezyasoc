@@ -71,15 +71,15 @@ div.imagen-trans {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-color: #464646;
   height: 30vh;
-
-
-  -moz-background-size: cover;
--webkit-background-size: cover;
--o-background-size: cover;
-background-size: cover;
 }
+
+
 
 div.imagen-trans.uno {
   background-image: url(../images/sub/5.Interiorismo/2.jpg);
@@ -94,6 +94,19 @@ div.imagen-trans.cuatro {
   background-image: url(../images/sub/5.Interiorismo/5.jpg);
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  div.imagen-trans {
+    background-attachment: scroll;
+  }
+  div.imagen-trans.uno {
+    background-image: url(../images/sub/5.Interiorismo/ios/2.jpg);
+  }
+
+  div.imagen-trans.cuatro {
+    background-image: url(../images/sub/5.Interiorismo/ios/5.jpg);
+  }
+
+}
 
 
 
@@ -160,7 +173,7 @@ div.titulo-seccion-derecha h3 span.deco {
 #header #logo img {
   padding: 0;
   margin: 0;
-  width: 10vh;
+  width: 13vh;
   min-width: 100px;
   max-width: 200px;
 }

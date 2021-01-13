@@ -77,12 +77,9 @@ div.imagen-trans {
   background-size: cover;
   background-color: #464646;
   height: 30vh;
-
-  /* -moz-background-size: auto 50%;
-  -webkit-background-size: auto 50%;
-  -o-background-size: auto 50%;
-  background-size: auto 50%; */
 }
+
+
 
 div.imagen-trans.uno {
   background-image: url(../images/sub/4.Laboratorio/2.jpg);
@@ -92,6 +89,11 @@ div.imagen-trans.dos {
 }
 div.imagen-trans.tres {
   background-image: url(../images/sub/4.Laboratorio/4.jpg);
+}
+@supports (-webkit-overflow-scrolling: touch) {
+  div.imagen-trans {
+    background-attachment: scroll;
+  }
 }
 
 div.servicio {
@@ -157,7 +159,7 @@ div.titulo-seccion-derecha h3 span.deco {
 #header #logo img {
   padding: 0;
   margin: 0;
-  width: 10vh;
+  width: 13vh;
   min-width: 100px;
   max-width: 200px;
 }
@@ -293,6 +295,12 @@ div.titulo-seccion-derecha h3 span.deco {
   margin: 0;
 }
 
+
+@media screen and (min-width:992px){
+  .nav-menu a {
+    padding: 8px;
+  }
+}
 /*-----------------
 # Sidebar
 -----------------*/
