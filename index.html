@@ -95,7 +95,7 @@
           </div>
           <!-- Botones en nav -->
           <nav id="nav-menu-container">
-            <button class="openbtn">☰</button>
+            <button class="openbtn" aria-label="Abrir menú">☰</button>
           </nav>
         </div>
 
@@ -113,7 +113,7 @@
 
           <!-- Botones en nav -->
 
-          <nav id="nav-menu-container mobile">
+          <nav id="nav-menu-container-desktop">
             <ul class="nav-menu">
               <li><a href="#">Inicio</a></li>
               <li><a href="#quienes-somos">Quienes Somos</a></li>
@@ -226,6 +226,7 @@
                         <img
                           src="assets/images/servicios/Ingenieria1.jpg"
                           alt="Ingenieria"
+                          loading="lazy"
                         />
                       </div>
                       <div class="titulo-servicios">
@@ -259,6 +260,7 @@
                         <img
                           src="assets/images/servicios/MedioAmbiente1.jpeg"
                           alt="Medio Ambiente"
+                          loading="lazy"
                         />
                       </div>
                       <div class="titulo-servicios">
@@ -291,6 +293,7 @@
                         <img
                           src="assets/images/servicios/SistemadeGestion1.jpg"
                           alt="Sistemas de Gestion"
+                          loading="lazy"
                         />
                       </div>
                       <div class="titulo-servicios">
@@ -326,6 +329,7 @@
                         <img
                           src="assets/images/servicios/Laboratorio1.jpg"
                           alt="Laboratorio"
+                          loading="lazy"
                         />
                       </div>
                       <div class="titulo-servicios">
@@ -366,7 +370,8 @@
                       <div class="imagen-servicio">
                         <img
                           src="assets/images/servicios/Interiorismo.jpg"
-                          alt="Ingenieria"
+                          alt="Interiorismo"
+                          loading="lazy"
                         />
                       </div>
                       <div class="titulo-servicios">
@@ -408,16 +413,20 @@
               <img
                 src="assets/images/equipo/Luis Hernández.jpg"
                 alt="Luis Hernández"
+                loading="lazy"
               />
             </div>
             <div class="info-de-contacto">
-              <h6 class="nombre-contaco">Luis Hernández</h6>
+              <h6 class="nombre-contacto">Luis Hernández</h6>
 
               <a
                 href="https://www.linkedin.com/in/luis-humberto-hernandez-b4597119b/"
+                aria-label="LinkedIn de Luis Hernández"
+                target="_blank"
+                rel="noopener"
                 ><img
                   src="assets/images/icons/linkedin.svg"
-                  alt="Foto linkedin"
+                  alt=""
               /></a>
             </div>
           </div>
@@ -427,17 +436,20 @@
               <img
                 src="assets/images/equipo/Hernán Farias.jpg"
                 alt="Hernán Farias"
+                loading="lazy"
               />
             </div>
             <div class="info-de-contacto">
-              <h6 class="nombre-contaco">Hernán Farias</h6>
+              <h6 class="nombre-contacto">Hernán Farias</h6>
 
               <a
-                href="https://www.linkedin.com/in/hernan-daniel-farias-56b88163/
-            "
+                href="https://www.linkedin.com/in/hernan-daniel-farias-56b88163/"
+                aria-label="LinkedIn de Hernán Farias"
+                target="_blank"
+                rel="noopener"
                 ><img
                   src="assets/images/icons/linkedin.svg"
-                  alt="Foto linkedin"
+                  alt=""
               /></a>
             </div>
           </div>
@@ -447,17 +459,20 @@
               <img
                 src="assets/images/equipo/Alejandro Navarro.jpg"
                 alt="Alejandro Navarro"
+                loading="lazy"
               />
             </div>
             <div class="info-de-contacto">
-              <h6 class="nombre-contaco">Alejandro Navarro</h6>
+              <h6 class="nombre-contacto">Alejandro Navarro</h6>
 
               <a
-                href="https://www.linkedin.com/in/luis-alejandro-navarro-a315841bb/
-            "
+                href="https://www.linkedin.com/in/luis-alejandro-navarro-a315841bb/"
+                aria-label="LinkedIn de Alejandro Navarro"
+                target="_blank"
+                rel="noopener"
                 ><img
                   src="assets/images/icons/linkedin.svg"
-                  alt="Foto linkedin"
+                  alt=""
               /></a>
             </div>
           </div>
@@ -467,17 +482,20 @@
               <img
                 src="assets/images/equipo/Laura Hernández.jpg"
                 alt="Laura Hernández"
+                loading="lazy"
               />
             </div>
             <div class="info-de-contacto">
-              <h6 class="nombre-contaco">Laura Hernández</h6>
+              <h6 class="nombre-contacto">Laura Hernández</h6>
 
               <a
-                href="https://www.linkedin.com/in/laura-lucia-hernandez-a0b5851bb/
-            "
+                href="https://www.linkedin.com/in/laura-lucia-hernandez-a0b5851bb/"
+                aria-label="LinkedIn de Laura Hernández"
+                target="_blank"
+                rel="noopener"
                 ><img
                   src="assets/images/icons/linkedin.svg"
-                  alt="Foto linkedin"
+                  alt=""
               /></a>
             </div>
           </div>
@@ -701,9 +719,10 @@
                 title="Facebook"
                 href="https://www.facebook.com/hernandezyasoc.ar/"
                 target="_blank"
+                rel="noopener"
               >
                 <img
-                  src="/assets/images/social/facebook.svg"
+                  src="assets/images/social/facebook.svg"
                   alt="facebook"
                   style="
                     width: 28px;
@@ -714,11 +733,13 @@
                 />
               </a>
               <a
+                title="Instagram"
                 href="https://www.instagram.com/hernandezyasoc.ar/"
                 target="_blank"
+                rel="noopener"
               >
                 <img
-                  src="/assets/images/social/instagram.svg"
+                  src="assets/images/social/instagram.svg"
                   alt="instagram"
                   style="
                     width: 28px;
@@ -752,11 +773,7 @@
     <footer>
       <div class="container">
         <div class="texto-footer">
-          <p>&copy Copyrights Hernandez y Asociados. All rights reserved.</p>
-          <p>
-            Hecho con ❤️ por
-            <a href="https://github.com/tomijais">Tomás Jais</a> y Laila Winer
-          </p>
+          <p>&copy; <span id="year"></span> Hernandez y Asociados. All rights reserved.</p>
         </div>
       </div>
     </footer>

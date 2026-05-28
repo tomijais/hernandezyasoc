@@ -5,7 +5,10 @@ window.addEventListener("load", e => {
 
   document.querySelector("button.openbtn").onclick = openNav;
 
-document.querySelector("a.closebtn").onclick = closeNav;
+  document.querySelector("a.closebtn").onclick = closeNav;
+
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 
 

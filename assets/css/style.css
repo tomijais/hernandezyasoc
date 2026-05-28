@@ -200,7 +200,7 @@ div.navbar-tablet-desktop {
     display: block;
   }
 
-  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile {
+  header.header#header div.navbar-tablet-desktop #nav-menu-container-desktop {
     position: absolute;
     top: calc(5vh + 12vh / 2 - 2vh * 2);
     /* Top del logo + width logo logo/2 - padding logo *2 */
@@ -209,7 +209,7 @@ div.navbar-tablet-desktop {
 
   header.header#header
     div.navbar-tablet-desktop
-    #nav-menu-container\ mobile
+    #nav-menu-container-desktop
     ul
     li
     a {
@@ -221,17 +221,15 @@ div.navbar-tablet-desktop {
 
   header.header#header
     div.navbar-tablet-desktop
-    #nav-menu-container\ mobile
+    #nav-menu-container-desktop
     ul
     li
     a:hover {
     color: var(--verde-clarito);
   }
 
-  div.navbar-tablet-desktop nav#nav-menu-container ul.nav-menu {
+  div.navbar-tablet-desktop nav#nav-menu-container-desktop ul.nav-menu {
     display: flex;
-  }
-  div.navbar-tablet-desktop nav#nav-menu-container ul.nav-menu li a {
   }
 
   div.navbar-tablet-desktop div#logo {
@@ -244,7 +242,7 @@ div.navbar-tablet-desktop {
   div.navbar-tablet-desktop div#logo a {
   }
 
-  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile {
+  header.header#header div.navbar-tablet-desktop #nav-menu-container-desktop {
     top: calc(5vh + 18vh / 2 - 2vh * 2);
     /* Top del logo + width logo logo/2 - padding logo *2 */
     right: 4vh;
@@ -264,7 +262,7 @@ div.navbar-tablet-desktop {
     width: 23vh;
     right: 5vh;
   }
-  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile {
+  header.header#header div.navbar-tablet-desktop #nav-menu-container-desktop {
     top: calc(5vh + 23vh / 2 - 2vh * 2);
   }
   .nav-menu a {
@@ -272,7 +270,7 @@ div.navbar-tablet-desktop {
   }
   header.header#header
     div.navbar-tablet-desktop
-    #nav-menu-container\ mobile
+    #nav-menu-container-desktop
     ul
     li
     a {
@@ -286,7 +284,7 @@ div.navbar-tablet-desktop {
     left: 15vh;
   }
 
-  header.header#header div.navbar-tablet-desktop #nav-menu-container\ mobile {
+  header.header#header div.navbar-tablet-desktop #nav-menu-container-desktop {
     right: 20vh;
   }
 }
